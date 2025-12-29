@@ -1,0 +1,260 @@
+client.ts:417  [Deprecation]The keyword 'slider-vertical' specified to an 'appearance' property is not standardized. It will be removed in the future. Use <input type=range style="writing-mode: vertical-lr; direction: rtl"> instead.
+updateStyle @ client.ts:417
+vue.esm.js:9324 Download the Vue Devtools extension for a better development experience:
+https://github.com/vuejs/vue-devtools
+vue.esm.js:9333 You are running Vue in development mode.
+Make sure to turn on production mode when deploying for production.
+See more tips at https://vuejs.org/guide/deployment.html
+localization.js:209 Detected locale zh-CN
+i18next.js:22 i18next::backendConnector: loaded namespace messages for language zh_CN Object
+i18next.js:22 i18next::backendConnector: loaded namespace messages for language en Object
+i18next.js:22 i18next: languageChanged zh_CN
+i18next.js:22 i18next: initialized Object
+init.js:32 i18n initialized, starting Vue framework
+init.js:35 Development mode enabled, installing Vue tools
+localization.js:46 i18n system loaded
+localization.js:209 Detected locale zh-CN
+main.js?t=1767026631032:236 Libraries: jQuery - 3.7.1, three.js - 97
+:8000/#:1  [Deprecation]The keyword 'slider-vertical' specified to an 'appearance' property is not standardized. It will be removed in the future. Use <input type=range style="writing-mode: vertical-lr; direction: rtl"> instead.
+serial_backend.js?t=1767026631032:110 Connecting to: loading
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=0000110e-0000-1000-8000-00805f9b34fb, name='耀民的AirPods Pro - Find My'
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=00001000-0000-1000-8000-00805f9b34fb, name='耀民的AirPods Pro - Find My'
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=0000111e-0000-1000-8000-00805f9b34fb, name='耀民的AirPods Pro - Find My'
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=0000110c-0000-1000-8000-00805f9b34fb, name='耀民的AirPods Pro - Find My'
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=0000110b-0000-1000-8000-00805f9b34fb, name='耀民的AirPods Pro - Find My'
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=0000111e-0000-1000-8000-00805f9b34fb, name='耀民的AirPods'
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=0000110b-0000-1000-8000-00805f9b34fb, name='耀民的AirPods'
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=0000110e-0000-1000-8000-00805f9b34fb, name='耀民的AirPods'
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=00001000-0000-1000-8000-00805f9b34fb, name='耀民的AirPods'
+:8000/#:1 Chooser dialog is not displaying a port blocked by the Serial blocklist: bluetoothServiceClassId=0000110c-0000-1000-8000-00805f9b34fb, name='耀民的AirPods'
+webSerial.js:74 SERIAL:  Connection opened with ID: undefined, Baud: 115200
+serial_backend.js?t=1767026631032:44 ffffffffffffffffffffffffffffffffff
+serial_backend.js?t=1767026631032:301 rrrrrrrrrrrrrrrrrrrrrrrrrrrr sensor status
+localization.js:115  i18next::interpolator: missed to pass in variable 1 for interpolating 打开串口 <span class="message-positive">成功</span> ID: {{1}}
+output @ i18next.js:22
+warn @ i18next.js:16
+forward @ i18next.js:90
+warn2 @ i18next.js:65
+(匿名) @ i18next.js:1367
+interpolate @ i18next.js:1353
+extendTranslation @ i18next.js:700
+translate @ i18next.js:670
+t @ i18next.js:2149
+i18n.getMessage @ localization.js:115
+onOpen @ serial_backend.js?t=1767026631032:307
+connectHandler @ serial_backend.js?t=1767026631032:45
+connect @ webSerial.js:78
+await in connect
+(匿名) @ serial_backend.js?t=1767026631032:131
+dispatch @ jquery.js:5145
+elemData.handle @ jquery.js:4949
+serial_backend.js?t=1767026631032:336 Requesting configuration data
+msp.js:321 MSP 发送: {code: 1, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=1 (0x1) len=3 (3) [0, 1, 46]
+msp.js:321 MSP 发送: {code: 2, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=2 (0x2) len=4 (4) [66, 84, 70, 76]
+msp.js:321 MSP 发送: {code: 3, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=3 (0x3) len=3 (3) [4, 5, 1]
+msp.js:321 MSP 发送: {code: 5, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=5 (0x5) len=46 (46) [74, 97, 110, 32, 32, 52, 32, 50, 48, 50, 53, 49, 54, 58, 49, 48, 58, 49, 55, 55, 55, 100, 48, 49, 98, 97, 4, 16, 20, 64, 28, 64, 29, 64, 32, 64, 33, 64, 34, 64, 37, 64, 39, 32, 43, 32]
+MSPHelper.js?t=1767026631032:810 Fw git rev: 77d01ba
+msp.js:321 MSP 发送: {code: 4, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=4 (0x4) len=81 (81) [83, 52, 48, 53, 0, 0, 2, 3, 9, 83, 84, 77, 51, 50, 70, 52, 48, 53, 15, 77, 65, 77, 66, 65, 70, 52, 48, 53, 95, 50, 48, 50, 50, 66, 4, 68, 73, 65, 84, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 64, 31, 1, 0, 0, 0, 1, 1]
+MSPHelper.js?t=1767026631032:856 [MSP_BOARD_INFO] parsed = {boardIdentifier: 'S405', boardVersion: 0, boardType: 2, targetCapabilities: 3, targetName: 'STM32F405', …}
+msp.js:321 MSP 发送: {code: 101, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=101 (0x65) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 0, 0, 0, 26, 4, 0, 0, 0, 0, 43, 0]
+msp.js:321 MSP 发送: {code: 160, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=160 (0xa0) len=12 (12) [77, 0, 74, 0, 7, 80, 49, 81, 84, 52, 57, 32]
+msp.js:321 MSP 发送: {code: 12294, data: Array(1), bufferOut: ArrayBuffer(10)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=12294 (0x3006) len=34 (34) [5, 32, 99, 97, 55, 51, 49, 54, 49, 52, 56, 98, 50, 51, 53, 100, 51, 102, 51, 53, 99, 50, 55, 98, 53, 57, 52, 48, 56, 52, 98, 100, 53, 48]
+msp.js:321 MSP 发送: {code: 12294, data: Array(1), bufferOut: ArrayBuffer(10)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=12294 (0x3006) len=2 (2) [2, 0]
+msp.js:321 MSP 发送: {code: 12294, data: Array(1), bufferOut: ArrayBuffer(10)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=12294 (0x3006) len=2 (2) [1, 0]
+msp.js:321 MSP 发送: {code: 99, data: Array(2), bufferOut: ArrayBuffer(8)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=99 (0x63) len=0 []
+MSPHelper.js?t=1767026631032:1647 Arming disable
+msp.js:321 MSP 发送: {code: 246, data: Array(6), bufferOut: ArrayBuffer(12)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=246 (0xf6) len=0 []
+MSPHelper.js?t=1767026631032:1650 Real time clock set
+msp.js:321 MSP 发送: {code: 36, data: false, bufferOut: ArrayBuffer(6)}
+msp.js:321 MSP 发送: {code: 32, data: false, bufferOut: ArrayBuffer(6)}
+msp.js:321 MSP 发送: {code: 70, data: false, bufferOut: ArrayBuffer(6)}
+serial_backend.js?t=1767026631032:688 ttttttttttttttttttttttttttttttttttttt
+serial_backend.js?t=1767026631032:689 FC.CONFIG.boardType: 2
+serial_backend.js?t=1767026631032:691 lllllllllllllllllll
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=36 (0x24) len=4 (4) [8, 0, 69, 16]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=32 (0x20) len=13 (13) [33, 43, 35, 0, 0, 1, 1, 74, 1, 174, 1, 94, 1]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=70 (0x46) len=13 (13) [3, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]
+msp.js:321 MSP 发送: {code: 240, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=240 (0xf0) len=4 (4) [0, 0, 0, 0]
+msp.js:321 MSP 发送: {code: 150, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+msp.js:321 MSP 发送: {code: 42, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=42 (0x2a) len=2 (2) [3, 0]
+model.js:43 THREE.WebGLRenderer 97
+msp.js:321 MSP 发送: {code: 12298, data: false, bufferOut: ArrayBuffer(9)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=12298 (0x300a) len=5 (5) [15, 16, 8, 255, 255]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 41, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 41, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 41, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [125, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=108 (0x6c) len=6 (6) [18, 0, 144, 0, 3, 0]
+msp.js:321 MSP 发送: {code: 36, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=36 (0x24) len=4 (4) [8, 0, 69, 16]
+msp.js:321 MSP 发送: {code: 70, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=70 (0x46) len=13 (13) [3, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]
+msp.js:321 MSP 发送: {code: 79, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=79 (0x4f) len=11 (11) [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+msp.js:321 MSP 发送: {code: 80, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=80 (0x50) len=11 (11) [1, 1, 1, 4, 64, 0, 2, 0, 0, 0, 0]
+msp.js:321 MSP 发送: {code: 90, data: false, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=90 (0x5a) len=20 (20) [1, 1, 0, 7, 224, 1, 38, 2, 0, 0, 0, 0, 48, 125, 0, 0, 0, 2, 0, 90]
+msp.js:321 MSP 发送: {code: 12294, data: Array(1), bufferOut: ArrayBuffer(10)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=12294 (0x3006) len=2 (2) [2, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [125, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [126, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 41, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [125, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 41, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [125, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+msp.js:321 MSP 发送: {code: 110, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=110 (0x6e) len=9 (9) [0, 0, 0, 0, 0, 0, 0, 0, 0]
+MSPHelper.js?t=1767026631032:333 [MSP_ANALOG] {voltage: 0, mAhdrawn: 0, rssi: 0, amperage: 0}
+msp.js:321 MSP 发送: {code: 116, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=116 (0x74) len=305 (305) [65, 82, 77, 59, 65, 78, 71, 76, 69, 59, 72, 79, 82, 73, 90, 79, 78, 59, 72, 69, 65, 68, 70, 82, 69, 69, 59, 70, 65, 73, 76, 83, 65, 70, 69, 59, 72, 69, 65, 68, 65, 68, 74, 59, 66, 69, 69, 80, 69, 82, 59, 76, 69, 68, 76, 79, 87, 59, 79, 83, 68, 32, 68, 73, 83, 65, 66, 76, 69, 59, 66, 76, 65, 67, 75, 66, 79, 88, 59, 70, 80, 86, 32, 65, 78, 71, 76, 69, 32, 77, 73, 88, 59, 66, 76, 65, 67, 75, 66, 79, …]
+msp.js:321 MSP 发送: {code: 150, data: undefined, bufferOut: ArrayBuffer(6)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=150 (0x96) len=24 (24) [124, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 42, 0, 4, 0, 0, 26, 4, 0, 1, 0, 0, 43, 0]
+msp.js:321 MSP 发送: {code: 99, data: Array(2), bufferOut: ArrayBuffer(8)}
+MSPHelper.js?t=1767026631032:190 [MSP RX] code=99 (0x63) len=0 []
+MSPHelper.js?t=1767026631032:1647 Arming disable
+webSerial.js:145 SERIAL: Connection with ID: undefined closed, Sent: 0 bytes, Received: 0 bytes

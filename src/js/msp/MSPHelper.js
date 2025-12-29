@@ -182,7 +182,15 @@ MspHelper.prototype.process_data = function(dataHandler) {
     let buff = [];
     let char = '';
     let flags = 0;
-
+    // 🔥 打印 code + payload
+    let bytes = [];
+    for (let i = 0; i < data.byteLength; i++) {
+        bytes.push(data.getUint8(i));
+    }
+    console.log(
+        `[MSP RX] code=${code} (0x${code.toString(16)}) len=${data.byteLength}`,
+        bytes
+    );
     if (!crcError) {
         if (!dataHandler.unsupported) switch (code) {
             case MSPCodes.MSP_STATUS:
@@ -322,6 +330,12 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 FC.ANALOG.amperage = data.read16() / 100; // A
                 FC.ANALOG.voltage = data.readU16() / 100;
                 FC.ANALOG.last_received_timestamp = performance.now();
+                console.log('[MSP_ANALOG]', {
+                    voltage: FC.ANALOG.voltage,
+                    mAhdrawn: FC.ANALOG.mAhdrawn,
+                    rssi: FC.ANALOG.rssi,
+                    amperage: FC.ANALOG.amperage
+                });
                 break;
             case MSPCodes.MSP_VOLTAGE_METERS:
                 FC.VOLTAGE_METERS = [];
