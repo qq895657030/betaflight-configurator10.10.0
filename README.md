@@ -6,5 +6,11 @@ Committer: GitHub <noreply@github.com>
 Date: Sun Apr 28 2024 03:53:13 GMT+0800 (China Standard Time)
 Fix Angle Mode positioning (#3914)
 
-# 
+# Web仿真
 yarn run dev
+
+
+
+
+# 编译win app
+yarn gulp apps --win64
