@@ -460,19 +460,25 @@ onboard_logging.initialize = function (callback) {
 
                                 const blob = new Blob([chunkDataView]);
 
-                                fileWriter.onwriteend = function(e) {
-                                    if (saveCancelled || nextAddress >= maxBytes) {
-                                        if (saveCancelled) {
-                                            dismiss_saving_dialog();
-                                        } else {
-                                            mark_saving_dialog_done(startTime, nextAddress, totalBytesCompressed);
-                                        }
+                                fileWriter.onwriteend = async function () {
+
+                                    if (saveCancelled) {
+                                        if (fileWriter.close) await fileWriter.close();
+                                        dismiss_saving_dialog();
+                                        return;
+                                    }
+
+                                    if (nextAddress >= maxBytes) {
+                                        if (fileWriter.close) await fileWriter.close();
+                                        mark_saving_dialog_done(startTime, nextAddress, totalBytesCompressed);
+                                        return;
+                                    }
+
+                                    // 继续读下一块
+                                    if (!self.writeError) {
+                                        mspHelper.dataflashRead(nextAddress, self.blockSize, onChunkRead);
                                     } else {
-                                        if (!self.writeError) {
-                                            mspHelper.dataflashRead(nextAddress, self.blockSize, onChunkRead);
-                                        } else {
-                                            dismiss_saving_dialog();
-                                        }
+                                        dismiss_saving_dialog();
                                     }
                                 };
 
@@ -495,12 +501,41 @@ onboard_logging.initialize = function (callback) {
         }
     }
 
-    function prepare_file(onComplete) {
+async function prepare_file(onComplete) {
 
-        const prefix = 'BLACKBOX_LOG';
-        const suffix = 'BBL';
+    const prefix = 'BLACKBOX_LOG';
+    const suffix = 'bbl';
+    const filename = generateFilename(prefix, suffix);
 
-        const filename = generateFilename(prefix, suffix);
+    if (window.showSaveFilePicker) {
+        try {
+            const handle = await window.showSaveFilePicker({
+                suggestedName: filename,
+                types: [{
+                    description: 'Blackbox log',
+                    accept: { 'application/octet-stream': ['.bbl'] }
+                }]
+            });
+
+            const writable = await handle.createWritable();
+
+            const fileWriter = {
+                onwriteend: null,
+                async write(blob) {
+                    await writable.write(blob);
+                    this.onwriteend && this.onwriteend();
+                },
+                async close() {
+                    await writable.close();   //  必须
+                }
+            };
+
+            onComplete(fileWriter);
+        } catch (e) {
+            console.warn('Save cancelled', e);
+        }
+        return;
+    }
 
         chrome.fileSystem.chooseEntry({type: 'saveFile', suggestedName: filename,
                 accepts: [{description: `${suffix.toUpperCase()} files`, extensions: [suffix]}]}, function(fileEntry) {
