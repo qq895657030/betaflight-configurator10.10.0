@@ -187,10 +187,11 @@ MspHelper.prototype.process_data = function(dataHandler) {
     for (let i = 0; i < data.byteLength; i++) {
         bytes.push(data.getUint8(i));
     }
-    console.log(
-        `[MSP RX] code=${code} (0x${code.toString(16)}) len=${data.byteLength}`,
-        bytes
-    );
+    //接收到
+    // console.log(
+    //     `[MSP RX] code=${code} (0x${code.toString(16)}) len=${data.byteLength}`,
+    //     bytes
+    // );
     if (!crcError) {
         if (!dataHandler.unsupported) switch (code) {
             case MSPCodes.MSP_STATUS:

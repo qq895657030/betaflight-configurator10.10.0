@@ -429,25 +429,32 @@ onboard_logging.initialize = function (callback) {
             }
         });
     }
-
+    //保存闪存数据到文件函数
     function flash_save_begin() {
+        console.log("🔥🔥🔥 [flash_save_begin] START 🔥🔥🔥");
+
         if (GUI.connected_to) {
+            console.log("[flash_save_begin] GUI is connected");
 
             self.blockSize = self.BLOCK_SIZE;
+            console.log("[flash_save_begin] blockSize =", self.blockSize);
 
-            // Begin by refreshing the occupied size in case it changed while the tab was open
+            // Begin by refreshing the occupied size
             flash_update_summary(function() {
                 const maxBytes = FC.DATAFLASH.usedSize;
+                console.log("[flash_save_begin] maxBytes =", maxBytes);
 
                 prepare_file(function(fileWriter) {
                     let nextAddress = 0;
                     let totalBytesCompressed = 0;
 
                     show_saving_dialog();
+                    console.log("[flash_save_begin] showing saving dialog");
 
                     function onChunkRead(chunkAddress, chunkDataView, bytesCompressed) {
+                        console.log("[onChunkRead] nextAddress =", nextAddress, "chunkDataView.byteLength =", chunkDataView ? chunkDataView.byteLength : null, "bytesCompressed =", bytesCompressed);
+
                         if (chunkDataView !== null) {
-                            // Did we receive any data?
                             if (chunkDataView.byteLength > 0) {
                                 nextAddress += chunkDataView.byteLength;
                                 if (isNaN(bytesCompressed) || isNaN(totalBytesCompressed)) {
@@ -456,50 +463,58 @@ onboard_logging.initialize = function (callback) {
                                     totalBytesCompressed += bytesCompressed;
                                 }
 
+                                console.log("[onChunkRead] writing chunk, totalBytesCompressed =", totalBytesCompressed);
                                 $(".dataflash-saving progress").attr("value", nextAddress / maxBytes * 100);
 
                                 const blob = new Blob([chunkDataView]);
 
                                 fileWriter.onwriteend = async function () {
+                                    console.log("[fileWriter.onwriteend] finished writing chunk at nextAddress =", nextAddress);
 
                                     if (saveCancelled) {
+                                        console.log("[fileWriter.onwriteend] saveCancelled, closing file");
                                         if (fileWriter.close) await fileWriter.close();
                                         dismiss_saving_dialog();
                                         return;
                                     }
 
                                     if (nextAddress >= maxBytes) {
+                                        console.log("[fileWriter.onwriteend] reached end of dataflash");
                                         if (fileWriter.close) await fileWriter.close();
                                         mark_saving_dialog_done(startTime, nextAddress, totalBytesCompressed);
                                         return;
                                     }
 
-                                    // 继续读下一块
                                     if (!self.writeError) {
+                                        console.log("[fileWriter.onwriteend] reading next block");
                                         mspHelper.dataflashRead(nextAddress, self.blockSize, onChunkRead);
                                     } else {
+                                        console.log("[fileWriter.onwriteend] writeError, dismissing dialog");
                                         dismiss_saving_dialog();
                                     }
                                 };
 
                                 fileWriter.write(blob);
                             } else {
-                                // A zero-byte block indicates end-of-file, so we're done
+                                console.log("[onChunkRead] zero-byte block, done");
                                 mark_saving_dialog_done(startTime, nextAddress, totalBytesCompressed);
                             }
                         } else {
-                            // There was an error with the received block (address didn't match the one we asked for), retry
+                            console.log("[onChunkRead] chunkDataView null, retry reading next block");
                             mspHelper.dataflashRead(nextAddress, self.blockSize, onChunkRead);
                         }
                     }
 
                     const startTime = new Date().getTime();
-                    // Fetch the initial block
+                    console.log("[flash_save_begin] starting first block read");
                     mspHelper.dataflashRead(nextAddress, self.blockSize, onChunkRead);
                 });
             });
+        } else {
+            console.log("[flash_save_begin] GUI not connected, aborting save");
         }
     }
+
 
 async function prepare_file(onComplete) {
 
