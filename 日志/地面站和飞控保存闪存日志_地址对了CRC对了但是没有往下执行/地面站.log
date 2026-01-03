@@ -1,0 +1,17 @@
+onboard_logging.js?t=1767454501699:434 🔥🔥🔥 [flash_save_begin] START 🔥🔥🔥
+onboard_logging.js?t=1767454501699:437 [flash_save_begin] GUI is connected
+onboard_logging.js?t=1767454501699:440 [flash_save_begin] blockSize = 4096
+msp.js:333 MSP 发送: {code: 70, data: false, dataDec: Array(0), dataHex: Array(0), bufferOutDec: Array(6), …}
+MSPHelper.js?t=1767454501699:191 [MSP RX] code=70 (0x46) len=13 (13) [3, 16, 0, 0, 0, 0, 0, 16, 0, 0, 0, 1, 0]
+onboard_logging.js?t=1767454501699:445 [flash_save_begin] maxBytes = 65536
+onboard_logging.js?t=1767454501699:452 [flash_save_begin] showing saving dialog
+onboard_logging.js?t=1767454501699:510 [flash_save_begin] starting first block read
+msp.js:333 MSP 发送: {code: 71, data: Array(7), dataDec: Array(7), dataHex: Array(7), bufferOutDec: Array(13), …}
+MSPHelper.js?t=1767454501699:191 [MSP RX] code=71 (0x47) len=21 (21) [0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+MSPHelper.js?t=1767454501699:2377 📦 MSP_DATAFLASH_READ RAW RX = (21) [0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] len = 21
+MSPHelper.js?t=1767454501699:2378 🧪 response.crcError = false
+MSPHelper.js?t=1767454501699:2380 [MSP][PASS-1] CRC OK
+MSPHelper.js?t=1767454501699:2382 [MSP][INFO] chunkAddress = 0 expected = 0
+MSPHelper.js?t=1767454501699:2386 [MSP][INFO] dataSize = 256
+MSPHelper.js?t=1767454501699:2388 [MSP][INFO] compressionType = 2
+MSPHelper.js?t=1767454501699:2391 [MSP][PASS-2] address match

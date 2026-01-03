@@ -1383,8 +1383,7 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 }
                 update_dataflash_global();
                 break;
-            case MSPCodes.MSP_DATAFLASH_READ:
-                // No-op, let callback handle it
+            case MSPCodes.MSP_DATAFLASH_READ: //执行这个函数 MSP.send_message(MSPCodes.MSP_DATAFLASH_READ, outData, false, function(response) {
                 break;
             case MSPCodes.MSP_DATAFLASH_ERASE:
                 console.log("Data flash erase begun...");
@@ -2368,28 +2367,50 @@ MspHelper.prototype.dataflashRead = function(address, blockSize, onDataCallback)
     outData = outData.concat([1]);
 
     MSP.send_message(MSPCodes.MSP_DATAFLASH_READ, outData, false, function(response) {
+            const raw = Array.from(
+                new Uint8Array(
+                    response.data.buffer,
+                    response.data.byteOffset,
+                    response.data.byteLength
+                )
+            );
+            console.log("📦 MSP_DATAFLASH_READ RAW RX =", raw, "len =", raw.length);
+            console.log("🧪 response.crcError =", response.crcError);
         if (!response.crcError) {
+            console.log('[MSP][PASS-1] CRC OK');
             const chunkAddress = response.data.readU32();
-
+            console.log('[MSP][INFO] chunkAddress =', chunkAddress, 'expected =', address);
+            
             const headerSize = 7;
             const dataSize = response.data.readU16();
+            console.log('[MSP][INFO] dataSize =', dataSize);
             const dataCompressionType = response.data.readU8();
-
+            console.log('[MSP][INFO] compressionType =', dataCompressionType);
             // Verify that the address of the memory returned matches what the caller asked for and there was not a CRC error
             if (chunkAddress == address) {
+                console.log('[MSP][PASS-2] address match');
                 /* Strip that address off the front of the reply and deliver it separately so the caller doesn't have to
                  * figure out the reply format:
                  */
                 if (dataCompressionType == 0) {
+                    console.log('[MSP][PASS-3] uncompressed data');
+                                console.log(
+                                    '[MSP][DATA] offset =',
+                                    response.data.byteOffset + headerSize,
+                                    'size =',
+                                    dataSize
+                                );
                     onDataCallback(address, new DataView(response.data.buffer, response.data.byteOffset + headerSize, dataSize));
                 } else if (dataCompressionType == 1) {
+                    console.log('[MSP][PASS-3] compressed data');
                     // Read compressed char count to avoid decoding stray bit sequences as bytes
                     const compressedCharCount = response.data.readU16();
-
+                    console.log('[MSP][INFO] compressedCharCount =', compressedCharCount);
                     // Compressed format uses 2 additional bytes as a pseudo-header to denote the number of uncompressed bytes
                     const compressedArray = new Uint8Array(response.data.buffer, response.data.byteOffset + headerSize + 2, dataSize - 2);
+                    console.log('[MSP][INFO] compressedArray.length =', compressedArray.length);
                     const decompressedArray = huffmanDecodeBuf(compressedArray, compressedCharCount, defaultHuffmanTree, defaultHuffmanLenIndex);
-
+                    console.log('[MSP][INFO] decompressed length =', decompressedArray.length);
                     onDataCallback(address, new DataView(decompressedArray.buffer), dataSize);
                 }
             } else {
