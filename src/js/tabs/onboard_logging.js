@@ -450,10 +450,11 @@ onboard_logging.initialize = function (callback) {
 
                     show_saving_dialog();
                     console.log("[flash_save_begin] showing saving dialog");
-
+//MSP 发送: {code: 71} 71出错
+//Expected address 0 but received 268435456 - retrying 出错日志20260103
                     function onChunkRead(chunkAddress, chunkDataView, bytesCompressed) {
                         console.log("[onChunkRead] nextAddress =", nextAddress, "chunkDataView.byteLength =", chunkDataView ? chunkDataView.byteLength : null, "bytesCompressed =", bytesCompressed);
-
+                         //下面没执行到！！！！！！！！
                         if (chunkDataView !== null) {
                             if (chunkDataView.byteLength > 0) {
                                 nextAddress += chunkDataView.byteLength;
@@ -462,7 +463,7 @@ onboard_logging.initialize = function (callback) {
                                 } else {
                                     totalBytesCompressed += bytesCompressed;
                                 }
-
+console.log("😁😁😁😁😁😁😁😁😁😁😁😁");
                                 console.log("[onChunkRead] writing chunk, totalBytesCompressed =", totalBytesCompressed);
                                 $(".dataflash-saving progress").attr("value", nextAddress / maxBytes * 100);
 

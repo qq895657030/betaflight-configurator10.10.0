@@ -1,0 +1,1473 @@
+Received data: 0x24 0x4D 0x3C 0x00 0x01 0x01 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 1 
+<<< MSPv1 cmd=1 len=0
+>>> MSPv1 Send: cmd=1 len=3: 24 4D 3E 03 01 01 29 00 2A
+
+Received data: 0x24 0x4D 0x3C 0x00 0x02 0x02 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 2 
+<<< MSPv1 cmd=2 len=0
+>>> MSPv1 Send: cmd=2 len=4: 24 4D 3E 04 02 42 54 46 4C 1A
+
+Received data: 0x24 0x4D 0x3C 0x00 0x03 0x03 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 3 
+<<< MSPv1 cmd=3 len=0
+>>> MSPv1 Send: cmd=3 len=3: 24 4D 3E 03 03 04 04 00 00
+
+Received data: 0x24 0x4D 0x3C 0x00 0x05 0x05 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 5 
+<<< MSPv1 cmd=5 len=0
+>>> MSPv1 Send: cmd=5 len=8: 24 4D 3E 08 05 32 30 32 35 30 34 31 32 0F
+
+Received data: 0x24 0x4D 0x3C 0x00 0x04 0x04 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 4 
+<<< MSPv1 cmd=4 len=0
+>>> MSPv1 Send: cmd=4 len=6: 24 4D 3E 06 04 42 54 46 4C 01 01 1E
+
+Received data: 0x24 0x4D 0x3C 0x00 0x65 0x65 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 101 
+<<< MSPv1 cmd=101 len=0
+>>> MSPv1 Send: cmd=101 len=13: 24 4D 3E 0D 65 E8 03 41 01 29 00 00 00 00 00 32 00 00 D8
+
+Received data: 0x24 0x4D 0x3C 0x00 0xA0 0xA0 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 160 
+<<< MSPv1 cmd=160 len=0
+>>> MSPv1 Send: cmd=160 len=12: 24 4D 3E 0C A0 30 00 3C 00 0E 47 33 30 34 38 36 37 E7
+
+Received data: 0x24 0x58 0x3C 0x00 0x06 0x30 0x01 0x00 0x05 0x91 
+
+[DEBUG] parser.inBuf (dataSize+2): 5 6 48 
+<<< MSPv2 cmd=12294 len=1
+>>> MSPv2 Send: cmd=12294 len=9 data: 24 58 3E 00 06 30 09 00 02 07 55 6E 6B 6E 6F 77 6E 7B
+Received data: 0x24 0x58 0x3C 0x00 0x06 0x30 0x01 0x00 0x02 0xC5 
+
+[DEBUG] parser.inBuf (dataSize+2): 2 6 48 
+<<< MSPv2 cmd=12294 len=1
+>>> MSPv2 Send: cmd=12294 len=9 data: 24 58 3E 00 06 30 09 00 02 07 55 6E 6B 6E 6F 77 6E 7B
+Received data: 0x24 0x58 0x3C 0x00 0x06 0x30 0x01 0x00 0x01 0x6F 
+
+[DEBUG] parser.inBuf (dataSize+2): 1 6 48 
+<<< MSPv2 cmd=12294 len=1
+>>> MSPv2 Send: cmd=12294 len=9 data: 24 58 3E 00 06 30 09 00 02 07 55 6E 6B 6E 6F 77 6E 7B
+Received data: 0x24 0x4D 0x3C 0x02 0x63 0x01 0x00 0x60 
+
+[DEBUG] parser.inBuf (dataSize+2): 1 0 48 1 
+<<< MSPv1 cmd=99 len=2
+>>> MSPv1 Send: cmd=99 len=0: 24 4D 3E 00 63 63
+
+Received data: 0x24 0x4D 0x3C 0x06 0xF6 0x42 0xF8 0x58 0x69 0x27 0x00 0x5C 
+
+[DEBUG] parser.inBuf (dataSize+2): 66 248 88 105 39 0 1 0 
+<<< MSPv1 cmd=246 len=6
+>>> MSPv1 Send: cmd=246 len=0: 24 4D 3E 00 F6 F6
+
+Received data: 0x24 0x4D 0x3C 0x00 0x24 0x24 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 36 
+<<< MSPv1 cmd=36 len=0
+>>> MSPv1 Send: cmd=36 len=4: 24 4D 3E 04 24 80 00 01 00 A1
+
+Received data: 0x24 0x4D 0x3C 0x00 0x20 0x20 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 32 
+<<< MSPv1 cmd=32 len=0
+>>> MSPv1 Send: cmd=32 len=0: 24 4D 3E 00 20 20
+
+[ERROR] MSPv1 TX timeout!
+Received data: 0x24 0x4D 0x3C 0x00 0x46 0x46 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 70 
+<<< MSPv1 cmd=70 len=0
+>>> MSPv1 Send: cmd=70 len=13: 24 4D 3E 0D 46 03 10 00 00 00 00 00 10 00 00 00 01 00 49
+
+Received data: 0x24 0x4D 0x3C 0x00 0xF0 0xF0 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 240 
+<<< MSPv1 cmd=240 len=0
+>>> MSPv1 Send: cmd=240 len=0: 24 4D 3E 00 F0 F0
+
+[ERROR] MSPv1 TX timeout!
+Received data: 0x24 0x4D 0x3C 0x00 0xF0 0xF0 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 240 
+<<< MSPv1 cmd=240 len=0
+>>> MSPv1 Send: cmd=240 len=0: 24 4D 3E 00 F0 F0
+
+Received data: 0x24 0x4D 0x3C 0x00 0x96 0x96 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 150 
+<<< MSPv1 cmd=150 len=0
+>>> MSPv1 Send: cmd=150 len=13: 24 4D 3E 0D 96 E8 03 41 01 29 00 00 00 00 00 32 00 00 2B
+
+Received data: 0x24 0x4D 0x3C 0x00 0x2A 0x2A 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 42 
+<<< MSPv1 cmd=42 len=0
+>>> MSPv1 Send: cmd=42 len=2: 24 4D 3E 02 2A 03 00 2B
+
+Received data: 0x24 0x58 0x3C 0x00 0x0A 0x30 0x00 0x00 0xF6 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 10 
+<<< MSPv2 cmd=12298 len=0
+>>> MSPv2 Send: cmd=12298 len=0 data: 24 58 3E 00 0A 30 00 00 F6
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+[ERROR] MSPv1 TX timeout!
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 
+
+Received data: 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x6C 0x6C 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 108 
+<<< MSPv1 cmd=108 len=0
+>>> MSPv1 Send: cmd=108 len=12: 24 4D 3E 0C 6C 05 0E EB 0D 66 01 00 00 01 00 00 00 EB
+
+Received data: 0x24 0x4D 0x3C 0x00 0x24 0x24 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 36 
+<<< MSPv1 cmd=36 len=0
+>>> MSPv1 Send: cmd=36 len=4: 24 4D 3E 04 24 80 00 01 00 A1
+
+Received data: 0x24 0x4D 0x3C 0x00 0x46 0x46 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 70 
+<<< MSPv1 cmd=70 len=0
+>>> MSPv1 Send: cmd=70 len=13: 24 4D 3E 0D 46 03 10 00 00 00 00 00 10 00 00 00 01 00 49
+
+Received data: 0x24 0x4D 0x3C 0x00 0x4F 0x4F 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 79 
+<<< MSPv1 cmd=79 len=0
+>>> MSPv1 Send: cmd=79 len=0: 24 4D 3E 00 4F 4F
+
+Received data: 0x24 0x4D 0x3C 0x00 0x50 0x50 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 80 
+<<< MSPv1 cmd=80 len=0
+>>> MSPv1 Send: cmd=80 len=16: 24 4D 3E 10 50 01 02 01 20 01 00 00 00 00 00 00 00 00 00 00 00 63
+
+Received data: 0x24 0x4D 0x3C 0x00 0x5A 0x5A 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 90 
+<<< MSPv1 cmd=90 len=0
+>>> MSPv1 Send: cmd=90 len=20: 24 4D 3E 14 5A 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4E
+
+Received data: 0x24 0x58 0x3C 0x00 0x06 0x30 0x01 0x00 0x02 0xC5 
+
+[DEBUG] parser.inBuf (dataSize+2): 2 6 48 
+<<< MSPv2 cmd=12294 len=1
+>>> MSPv2 Send: cmd=12294 len=8 data: 24 58 3E 00 06 30 08 00 00 06 50 69 6C 6F 74 31 8D
+Received data: 0x24 0x4D 0x3C 0x00 0x46 0x46 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 70 
+<<< MSPv1 cmd=70 len=0
+>>> MSPv1 Send: cmd=70 len=13: 24 4D 3E 0D 46 03 10 00 00 00 00 00 10 00 00 00 01 00 49
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 
+
+Received data: 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 
+
+Received data: 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 
+
+Received data: 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 
+
+Received data: 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 
+
+Received data: 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 
+
+Received data: 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
+
+Received data: 0x24 0x4D 0x3C 0x07 0x47 0x00 0x00 0x00 0x00 0x00 0x10 0x01 0x51 
+
+[DEBUG] parser.inBuf (dataSize+2): 0 0 0 0 0 16 1 0 0 
+<<< MSPv1 cmd=71 len=7
+[DEBUG] pl bytes: 0 0 0 0 0 16
+
+[MSP_DATAFLASH_READ] address=0, readLength=128, response: 
+[MSP_DATAFLASH_READ] response : 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+>>> MSPv1 Send: cmd=71 len=135: 24 4D 3E 87 47 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D0
