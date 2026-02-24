@@ -14,3 +14,8 @@ yarn run dev
 
 # 编译win app
 yarn gulp apps --win64
+[网络不行解决方法]
+下载nwjs-v0.72.0-win-x64.zip
+解压到该路径
+/f/betaflight/Betaflight-configurator/betaflight-configurator10.10.0/cache/0.72.0-normal/
+再yarn gulp apps --win64
