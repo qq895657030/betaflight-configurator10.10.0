@@ -19,3 +19,8 @@ yarn gulp apps --win64
 解压到该路径
 /f/betaflight/Betaflight-configurator/betaflight-configurator10.10.0/cache/0.72.0-normal/
 再yarn gulp apps --win64
+
+# 清除
+Remove-Item -Recurse -Force dist
+Remove-Item -Recurse -Force apps
+gulp clean
