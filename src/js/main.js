@@ -366,6 +366,11 @@ function startProcess() {
                             led_strip.initialize(content_ready),
                         );
                         break;
+                    case 'onboard_tuning':
+                        import("./tabs/onboard_tuning").then(({ onboard_tuning }) =>
+                            onboard_tuning.initialize(content_ready),
+                        );
+                        break;                        
                     case 'failsafe':
                         import("./tabs/failsafe").then(({ failsafe }) =>
                             failsafe.initialize(content_ready),
@@ -399,6 +404,10 @@ function startProcess() {
                     case 'setup_osd':
                         import("./tabs/setup_osd").then(({ setup_osd }) =>
                             setup_osd.initialize(content_ready),
+                        );
+                    case 'onboard_tuning':
+                        import("./tabs/onboard_tuning").then(({ onboard_tuning }) =>
+                            onboard_tuning.initialize(content_ready),
                         );
                         break;
                     case 'configuration':

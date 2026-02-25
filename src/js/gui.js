@@ -48,6 +48,7 @@ class GuiControl {
             'modes',
             'motors',
             'pid_tuning',
+            'onboard_tuning',
             'ports',
             'receiver',
             'sensors',

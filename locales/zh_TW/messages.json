@@ -238,6 +238,9 @@
     "tabOnboardLogging": {
         "message": "黑盒子"
     },
+    "tabOnboardTuning": {
+        "message": "飛控調校"
+    },
     "tabAdjustments": {
         "message": "調整"
     },
