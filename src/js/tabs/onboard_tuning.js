@@ -28,7 +28,7 @@ function startLoopStream() {
 
     GUI.interval_add(LOOP_INTERVAL_NAME, function () {
 
-        MSP.send_message(MSPCodes.MSP_S_LOOP, false, false, function () {
+        MSP.send_message(MSPCodes.MSP_VTXTABLE_BAND, false, false, function () { //MSP_S_LOOP
 
             const globalMSP = window.MSP || MSP;
             const data = globalMSP.data || (globalMSP.message && globalMSP.message.data);
@@ -112,8 +112,8 @@ const onboard_tuning = {
                         return;
                     }
 
-                    if (!MSPCodes.MSP_S_LOOP) {
-                        alert("MSP_S_LOOP 未定义");
+                    if (!MSPCodes.MSP_VTXTABLE_BAND) {   //MSP_S_LOOP
+                        alert("MSP_VTXTABLE_BAND 未定义");
                         this.checked = false;
                         return;
                     }
