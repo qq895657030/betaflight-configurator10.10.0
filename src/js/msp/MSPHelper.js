@@ -174,6 +174,9 @@ MspHelper.writeGyroFilterSliderSettings = function(buffer) {
     .push32(0); // reserved for future use
 };
 
+// 🔥 新增：用于存储自定义指令数据的缓存数组 结构：{ code: 137, data: Uint8Array, timestamp: 123456789 }
+window.CUSTOM_MSP_CACHE = []; 
+
 MspHelper.prototype.process_data = function(dataHandler) {
     const self = this;
     const data = dataHandler.dataView; // DataView (allowing us to view arrayBuffer as struct/union)
@@ -193,6 +196,34 @@ MspHelper.prototype.process_data = function(dataHandler) {
         bytes
     );
     if (!crcError) {
+
+
+        // 🔥🔥🔥 新增核心逻辑：拦截特定 Code 并保存到数组 🔥🔥🔥
+        // 这里我们可以监听所有 Code，或者只监听特定的 (例如 137)
+        const TARGET_CODES = [110, 500, 137]; // 在这里填入你想监控的 Code 列表
+        if (TARGET_CODES.includes(code)) {
+            // 1. 将 DataView 转回 Uint8Array (方便后续处理)
+            const uint8Data = new Uint8Array(data.buffer, data.byteOffset, data.byteLength);
+            // 2. 查找数组中是否已存在该 Code 的记录
+            const existingIndex = window.CUSTOM_MSP_CACHE.findIndex(item => item.code === code);
+            const newData = {
+                code: code,
+                data: uint8Data,      // 原始二进制数据
+                dataDec: bytes,       // 十进制数组 (方便直接看)
+                timestamp: Date.now() // 时间戳
+            };
+            if (existingIndex !== -1) {
+                // 如果存在，更新它
+                window.CUSTOM_MSP_CACHE[existingIndex] = newData;
+            } else {
+                // 如果不存在，推入新数据
+                window.CUSTOM_MSP_CACHE.push(newData);
+            }
+            console.log(`[Cache Updated] Code ${code} saved. Count: ${window.CUSTOM_MSP_CACHE.length}`);
+        }
+        // 🔥🔥🔥 拦截结束 🔥🔥🔥
+
+
         if (!dataHandler.unsupported) switch (code) {
             case MSPCodes.MSP_STATUS:
                 FC.CONFIG.cycleTime = data.readU16();
