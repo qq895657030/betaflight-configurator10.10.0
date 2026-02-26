@@ -1,3 +1,4 @@
+<!-- onboard_tuning.html  -->
 <div class="tab-onboard_tuning">
     <div class="content_wrapper">
         <h1>板载调参 (Onboard Tuning)</h1>
@@ -29,6 +30,24 @@
             </div>
         </div>
 
+        <div style="margin-top:20px; padding:20px; background:#fff3e0; border:1px solid #ff9800;">
+            <h3>3. 500Hz 实时调试：</h3>
+
+            <label style="font-size:16px;">
+                <input type="checkbox" id="loop_stream_enable">
+                启用 500Hz MSP_S_LOOP 数据流
+            </label>
+
+            <div id="loop_stream_result"
+                style="margin-top:15px;
+                        padding:10px;
+                        background:black;
+                        color:#00ff00;
+                        font-family:monospace;
+                        min-height:40px;">
+                未启动
+            </div>
+        </div>
     </div>
     
     <div class="content_toolbar">
