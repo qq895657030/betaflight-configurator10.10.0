@@ -1,4 +1,4 @@
-# 基于此分支
+﻿# 基于此分支
 Commit: c97deaf7146837b2378e683a7f5b429fea34d5a9
 Parents: 9e07b125fdbc85d0f682125c23c3708a4d0968cb
 Author: Mark Haslinghuis <mark@numloq.nl>
@@ -22,6 +22,10 @@ yarn gulp apps --win64
 解压到该路径
 /f/betaflight/Betaflight-configurator/betaflight-configurator10.10.0/cache/0.72.0-normal/
 再yarn gulp apps --win64
+
+# 生成安装包
+yarn gulp release --win64
+
 
 # 清除
 Remove-Item -Recurse -Force dist

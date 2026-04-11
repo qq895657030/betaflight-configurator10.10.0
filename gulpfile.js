@@ -664,6 +664,21 @@ function buildNWAppsWrapper(platforms, flavor, dir, done) {
     }
 }
 
+function ensureWindowsExecutableAlias(buildDir, platform) {
+    if (!platform.startsWith('win')) {
+        return;
+    }
+
+    const targetDir = path.join(buildDir, metadata.name, platform);
+    const nwExePath = path.join(targetDir, 'nw.exe');
+    const appExePath = path.join(targetDir, `${metadata.name}.exe`);
+
+    if (fs.existsSync(nwExePath) && !fs.existsSync(appExePath)) {
+        fs.copyFileSync(nwExePath, appExePath);
+        console.log(`Created Windows launcher alias: ${appExePath}`);
+    }
+}
+
 function buildNWApps(platforms, flavor, dir, done) {
     if (platforms.length > 0) {
         const version = nwBuilderOptions.version;
@@ -752,6 +767,7 @@ function buildNWApps(platforms, flavor, dir, done) {
                     // 注意：这里假设 files 是 './dist/**/*'
                     if (fs.existsSync(DIST_DIR)) {
                          fse.copySync(DIST_DIR, destDir, { overwrite: true });
+                         ensureWindowsExecutableAlias(dir, platforms[0]);
                          console.log('✅ Manual build completed successfully!');
                          return done();
                     } else {
@@ -765,6 +781,7 @@ function buildNWApps(platforms, flavor, dir, done) {
                     process.exit(1);
                 }
             }
+            platforms.forEach((platform) => ensureWindowsExecutableAlias(dir, platform));
             done();
         });
     } else {
