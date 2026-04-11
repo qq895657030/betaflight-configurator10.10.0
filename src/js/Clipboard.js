@@ -76,9 +76,6 @@ Clipboard._configureClipboardAsCordova = function() {
 };
 
 Clipboard._configureClipboardAsOther = function() {
-
-    console.warn('NO Clipboard available');
-
     this.available = false;
     this.readAvailable = false;
     this.writeAvailable = false;

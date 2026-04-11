@@ -33,8 +33,6 @@ function parseInt16(lo, hi) {
 }
 
 function startLoopStream() {
-    console.log(`>>> startLoopStream (Code: ${TARGET_CODE}, Interval: ${LOOP_INTERVAL_MS}ms)`);
-
     GUI.interval_remove(LOOP_INTERVAL_NAME);
 
     // 更新 UI 上的提示文字
@@ -98,7 +96,6 @@ function startLoopStream() {
 
 
 function stopLoopStream() {
-    console.log(">>> stopLoopStream");
     GUI.interval_remove(LOOP_INTERVAL_NAME);
     $('#loop_stream_result').html("<span style='color:gray'>已停止</span>");
 }
@@ -106,15 +103,11 @@ function stopLoopStream() {
 const onboard_tuning = {
 
     initialize: function (callback) {
-
-        console.log(">>> Onboard Tuning Tab Initializing");
-
         if (GUI.active_tab !== 'onboard_tuning')
             GUI.active_tab = 'onboard_tuning';
 
         $('#content').load("./tabs/onboard_tuning.html", function () {
 
-            console.log(">>> HTML Loaded");
             i18n.localizePage();
 
             // ========= 本地测试 =========
@@ -148,8 +141,6 @@ const onboard_tuning = {
             // ========= 实时数据流开关 =========
             $('#loop_stream_enable').on('change', function () {
                 const isChecked = this.checked;
-                console.log("Checkbox changed:", isChecked);
-
                 if (isChecked) {
                     if (!isConnected()) {
                         alert("未连接飞控！请先连接。");
@@ -158,8 +149,6 @@ const onboard_tuning = {
                     }
                     
                     // 提示用户当前监控的 Code (使用全局常量)
-                    console.log(`开始监控 Code: ${TARGET_CODE} (请确保 MspHelper.js 中包含此 Code)`);
-                    
                     // 清空旧缓存，避免显示旧数据 (使用全局常量)
                     if(window.CUSTOM_MSP_CACHE) {
                         window.CUSTOM_MSP_CACHE = window.CUSTOM_MSP_CACHE.filter(i => i.code !== TARGET_CODE);
@@ -177,14 +166,11 @@ const onboard_tuning = {
                 alert("保存功能暂未实现 (仅演示)");
             });
 
-            console.log(">>> Onboard Tuning Ready");
-
             if (callback) callback();
         });
     },
 
     cleanup: function (callback) {
-        console.log(">>> Onboard Tuning Cleanup");
         stopLoopStream();
         if (callback) callback();
     }

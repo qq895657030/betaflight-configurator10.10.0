@@ -174,9 +174,6 @@ MspHelper.writeGyroFilterSliderSettings = function(buffer) {
     .push32(0); // reserved for future use
 };
 
-// 🔥 新增：用于存储自定义指令数据的缓存数组 结构：{ code: 137, data: Uint8Array, timestamp: 123456789 }
-window.CUSTOM_MSP_CACHE = []; 
-
 MspHelper.prototype.process_data = function(dataHandler) {
     const self = this;
     const data = dataHandler.dataView; // DataView (allowing us to view arrayBuffer as struct/union)
@@ -185,45 +182,7 @@ MspHelper.prototype.process_data = function(dataHandler) {
     let buff = [];
     let char = '';
     let flags = 0;
-    // 🔥 打印 code + payload
-    let bytes = [];
-    for (let i = 0; i < data.byteLength; i++) {
-        bytes.push(data.getUint8(i));
-    }
-    //接收到
-    console.log(
-        `[MSP RX] code=${code} (0x${code.toString(16)}) len=${data.byteLength}`,
-        bytes
-    );
     if (!crcError) {
-
-
-        // 🔥🔥🔥 新增核心逻辑：拦截特定 Code 并保存到数组 🔥🔥🔥
-        // 这里我们可以监听所有 Code，或者只监听特定的 (例如 137)
-        const TARGET_CODES = [110, 500, 137]; // 在这里填入你想监控的 Code 列表
-        if (TARGET_CODES.includes(code)) {
-            // 1. 将 DataView 转回 Uint8Array (方便后续处理)
-            const uint8Data = new Uint8Array(data.buffer, data.byteOffset, data.byteLength);
-            // 2. 查找数组中是否已存在该 Code 的记录
-            const existingIndex = window.CUSTOM_MSP_CACHE.findIndex(item => item.code === code);
-            const newData = {
-                code: code,
-                data: uint8Data,      // 原始二进制数据
-                dataDec: bytes,       // 十进制数组 (方便直接看)
-                timestamp: Date.now() // 时间戳
-            };
-            if (existingIndex !== -1) {
-                // 如果存在，更新它
-                window.CUSTOM_MSP_CACHE[existingIndex] = newData;
-            } else {
-                // 如果不存在，推入新数据
-                window.CUSTOM_MSP_CACHE.push(newData);
-            }
-            console.log(`[Cache Updated] Code ${code} saved. Count: ${window.CUSTOM_MSP_CACHE.length}`);
-        }
-        // 🔥🔥🔥 拦截结束 🔥🔥🔥
-
-
         if (!dataHandler.unsupported) switch (code) {
             case MSPCodes.MSP_STATUS:
                 FC.CONFIG.cycleTime = data.readU16();
@@ -362,12 +321,6 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 FC.ANALOG.amperage = data.read16() / 100; // A
                 FC.ANALOG.voltage = data.readU16() / 100;
                 FC.ANALOG.last_received_timestamp = performance.now();
-                console.log('[MSP_ANALOG]', {
-                    voltage: FC.ANALOG.voltage,
-                    mAhdrawn: FC.ANALOG.mAhdrawn,
-                    rssi: FC.ANALOG.rssi,
-                    amperage: FC.ANALOG.amperage
-                });
                 break;
             case MSPCodes.MSP_VOLTAGE_METERS:
                 FC.VOLTAGE_METERS = [];
@@ -847,7 +800,6 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 }
 
                 FC.CONFIG.gitRevision = String.fromCharCode.apply(null, buff);
-                console.log("Fw git rev:", FC.CONFIG.gitRevision);
 
                 if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_46)) {
                     let option = data.readU16();
@@ -893,19 +845,6 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 } else {
                     FC.CONFIG.configurationProblems = 0;
                 }
-                console.log('[MSP_BOARD_INFO] parsed =', {
-                    boardIdentifier: FC.CONFIG.boardIdentifier,
-                    boardVersion: FC.CONFIG.boardVersion,
-                    boardType: FC.CONFIG.boardType,
-                    targetCapabilities: FC.CONFIG.targetCapabilities,
-                    targetName: FC.CONFIG.targetName,
-                    boardName: FC.CONFIG.boardName,
-                    manufacturerId: FC.CONFIG.manufacturerId,
-                    mcuTypeId: FC.CONFIG.mcuTypeId,
-                    configurationState: FC.CONFIG.configurationState,
-                    sampleRateHz: FC.CONFIG.sampleRateHz,
-                    configurationProblems: FC.CONFIG.configurationProblems
-                });
                 break;
 
             case MSPCodes.MSP_NAME:
@@ -1647,7 +1586,6 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 OSD.data.VIDEO_COLS['HD'] = data.readU8();
                 OSD.data.VIDEO_ROWS['HD'] = data.readU8();
                 OSD.data.VIDEO_BUFFER_CHARS['HD'] = OSD.data.VIDEO_COLS['HD'] * OSD.data.VIDEO_ROWS['HD'];
-                console.log(`Canvas ${OSD.data.VIDEO_COLS['HD']} x ${OSD.data.VIDEO_ROWS['HD']}`);
                 break;
             case MSPCodes.MSP_SET_OSD_CANVAS:
                 console.log('OSD Canvas config set');
@@ -1683,10 +1621,8 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 console.log('Copy profile');
                 break;
             case MSPCodes.MSP_ARMING_DISABLE:
-                console.log('Arming disable');
                 break;
             case MSPCodes.MSP_SET_RTC:
-                console.log('Real time clock set');
                 break;
             case MSPCodes.MSP2_SET_MOTOR_OUTPUT_REORDERING:
                 console.log('Motor output reordering set');
@@ -1742,7 +1678,9 @@ MspHelper.prototype.process_data = function(dataHandler) {
             default:
                 console.log(`Unknown code detected: ${code} (${getMSPCodeName(code)})`);
         } else {
-            console.log(`FC reports unsupported message error: ${code} (${getMSPCodeName(code)})`);
+            if (code !== MSPCodes.MSP2_GET_TEXT) {
+                console.log(`FC reports unsupported message error: ${code} (${getMSPCodeName(code)})`);
+            }
 
             if (code === MSPCodes.MSP_SET_REBOOT) {
                 TABS.onboard_logging.mscRebootFailedCallback();
@@ -2406,50 +2344,25 @@ MspHelper.prototype.dataflashRead = function(address, blockSize, onDataCallback)
     outData = outData.concat([1]);
 
     MSP.send_message(MSPCodes.MSP_DATAFLASH_READ, outData, false, function(response) {
-            const raw = Array.from(
-                new Uint8Array(
-                    response.data.buffer,
-                    response.data.byteOffset,
-                    response.data.byteLength
-                )
-            );
-            console.log("📦 MSP_DATAFLASH_READ RAW RX =", raw, "len =", raw.length);
-            console.log("🧪 response.crcError =", response.crcError);
         if (!response.crcError) {
-            console.log('[MSP][PASS-1] CRC OK');
             const chunkAddress = response.data.readU32();
-            console.log('[MSP][INFO] chunkAddress =', chunkAddress, 'expected =', address);
-            
+
             const headerSize = 7;
             const dataSize = response.data.readU16();
-            console.log('[MSP][INFO] dataSize =', dataSize);
             const dataCompressionType = response.data.readU8();
-            console.log('[MSP][INFO] compressionType =', dataCompressionType);
             // Verify that the address of the memory returned matches what the caller asked for and there was not a CRC error
             if (chunkAddress == address) {
-                console.log('[MSP][PASS-2] address match');
                 /* Strip that address off the front of the reply and deliver it separately so the caller doesn't have to
                  * figure out the reply format:
                  */
                 if (dataCompressionType == 0) {
-                    console.log('[MSP][PASS-3] uncompressed data');
-                                console.log(
-                                    '[MSP][DATA] offset =',
-                                    response.data.byteOffset + headerSize,
-                                    'size =',
-                                    dataSize
-                                );
                     onDataCallback(address, new DataView(response.data.buffer, response.data.byteOffset + headerSize, dataSize));
                 } else if (dataCompressionType == 1) {
-                    console.log('[MSP][PASS-3] compressed data');
                     // Read compressed char count to avoid decoding stray bit sequences as bytes
                     const compressedCharCount = response.data.readU16();
-                    console.log('[MSP][INFO] compressedCharCount =', compressedCharCount);
                     // Compressed format uses 2 additional bytes as a pseudo-header to denote the number of uncompressed bytes
                     const compressedArray = new Uint8Array(response.data.buffer, response.data.byteOffset + headerSize + 2, dataSize - 2);
-                    console.log('[MSP][INFO] compressedArray.length =', compressedArray.length);
                     const decompressedArray = huffmanDecodeBuf(compressedArray, compressedCharCount, defaultHuffmanTree, defaultHuffmanLenIndex);
-                    console.log('[MSP][INFO] decompressed length =', decompressedArray.length);
                     onDataCallback(address, new DataView(decompressedArray.buffer), dataSize);
                 }
             } else {

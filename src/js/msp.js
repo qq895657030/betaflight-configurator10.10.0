@@ -316,29 +316,6 @@ const MSP = {
             }
             return false;
         }
-            // 🔹 打印发送内容,除了108
-            if (code !== 108) {
-                // 确保 data 是数组，避免 undefined 报错
-                const payload = data || [];
-
-                // 生成 buffer
-                const bufferOut = code <= 254 ? this.encode_message_v1(code, payload) : this.encode_message_v2(code, payload);
-
-                // 打印 data 和 buffer，十进制和十六进制
-                const dataDec = Array.from(payload).map(x => x);
-                const dataHex = Array.from(payload).map(x => x.toString(16).padStart(2,'0'));
-                const bufDec = Array.from(new Uint8Array(bufferOut)).map(x => x);
-                const bufHex = Array.from(new Uint8Array(bufferOut)).map(x => x.toString(16).padStart(2,'0'));
-
-                console.log("MSP 发送:", {
-                    code,
-                    data,
-                    dataDec,
-                    dataHex,
-                    bufferOutDec: bufDec,
-                    bufferOutHex: bufHex
-                });
-            }
         let requestExists = false;
         for (const instance of this.callbacks) {
             if (instance.code === code) {
