@@ -10,6 +10,7 @@ const zip = require('gulp-zip');
 const del = require('del');
 const NwBuilder = require('nw-builder');
 const innoSetup = require('@quanle94/innosetup');
+const rcedit = require('rcedit');
 const deb = require('gulp-debian');
 const buildRpm = require('rpm-builder');
 const commandExistsSync = require('command-exists').sync;
@@ -679,6 +680,39 @@ function ensureWindowsExecutableAlias(buildDir, platform) {
     }
 }
 
+function postProcessWindowsExecutables(buildDir, platforms, done) {
+    const iconPath = path.resolve('./src/images/bf_icon.ico');
+    const tasks = [];
+
+    platforms.forEach((platform) => {
+        if (!platform.startsWith('win')) {
+            return;
+        }
+
+        ensureWindowsExecutableAlias(buildDir, platform);
+
+        const appExePath = path.join(buildDir, metadata.name, platform, `${metadata.name}.exe`);
+        if (!fs.existsSync(appExePath)) {
+            console.warn(`Windows executable not found for icon patch: ${appExePath}`);
+            return;
+        }
+
+        tasks.push(
+            rcedit(appExePath, { icon: iconPath })
+                .then(() => {
+                    console.log(`Patched executable icon: ${appExePath}`);
+                })
+                .catch((err) => {
+                    console.warn(`Failed to patch executable icon (${appExePath}): ${err}`);
+                }),
+        );
+    });
+
+    Promise.all(tasks)
+        .then(() => done())
+        .catch(() => done());
+}
+
 function buildNWApps(platforms, flavor, dir, done) {
     if (platforms.length > 0) {
         const version = nwBuilderOptions.version;
@@ -767,9 +801,8 @@ function buildNWApps(platforms, flavor, dir, done) {
                     // 注意：这里假设 files 是 './dist/**/*'
                     if (fs.existsSync(DIST_DIR)) {
                          fse.copySync(DIST_DIR, destDir, { overwrite: true });
-                         ensureWindowsExecutableAlias(dir, platforms[0]);
                          console.log('✅ Manual build completed successfully!');
-                         return done();
+                         return postProcessWindowsExecutables(dir, [platforms[0]], done);
                     } else {
                         console.error('❌ Dist directory not found. Manual build failed.');
                         process.exit(1);
@@ -781,8 +814,7 @@ function buildNWApps(platforms, flavor, dir, done) {
                     process.exit(1);
                 }
             }
-            platforms.forEach((platform) => ensureWindowsExecutableAlias(dir, platform));
-            done();
+            postProcessWindowsExecutables(dir, platforms, done);
         });
     } else {
         console.log('No platform suitable for NW Build');
