@@ -2370,6 +2370,10 @@
         "message": "Fixar Direção para direção do Magnetómetro (controlo do compasso)",
         "description": "Help text to MAG mode"
     },
+    "auxiliaryHelpMode_BARO": {
+        "message": "Ativar modo BARO (manutenção de altitude com barómetro)",
+        "description": "Help text to BARO mode"
+    },
     "auxiliaryHelpMode_MSPOVERRIDE": {
         "message": "Ativar modo Override de MSP",
         "description": "Help text to MSP OVERRIDE mode"

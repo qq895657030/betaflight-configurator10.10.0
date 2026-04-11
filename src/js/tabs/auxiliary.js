@@ -12,6 +12,9 @@ import $ from 'jquery';
 import inflection from "inflection";
 
 const auxiliary = {};
+const fallbackModeNameById = {
+    3: 'BARO',
+};
 
 auxiliary.initialize = function (callback) {
     GUI.active_tab_ref = this;
@@ -268,6 +271,29 @@ auxiliary.initialize = function (callback) {
 
     function process_html() {
         let auxChannelCount = FC.RC.active_channels - 4;
+
+        // Some firmwares may report a mode in MODE_RANGES but omit its name/id pair in BOXNAMES/BOXIDS.
+        // Add a safe fallback entry so the mode still appears and remains editable in the Modes tab.
+        const knownModeIds = new Set(FC.AUX_CONFIG_IDS);
+        const modeIdsFromRanges = new Set([
+            ...FC.MODE_RANGES.map(modeRange => modeRange.id),
+            ...FC.MODE_RANGES_EXTRA.map(modeRangeExtra => modeRangeExtra.id),
+        ]);
+
+        for (const modeId of modeIdsFromRanges) {
+            if (knownModeIds.has(modeId)) {
+                continue;
+            }
+
+            const fallbackModeName = fallbackModeNameById[modeId];
+            if (!fallbackModeName) {
+                continue;
+            }
+
+            FC.AUX_CONFIG.push(fallbackModeName);
+            FC.AUX_CONFIG_IDS.push(modeId);
+            knownModeIds.add(modeId);
+        }
 
         configureRangeTemplate(auxChannelCount);
         configureLinkTemplate();

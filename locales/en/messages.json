@@ -2458,6 +2458,10 @@
         "message": "Heading lock to Magnetometer direction (compass control)",
         "description": "Help text to MAG mode"
     },
+    "auxiliaryHelpMode_BARO": {
+        "message": "Enable BARO (barometer altitude hold) mode",
+        "description": "Help text to BARO mode"
+    },
     "auxiliaryHelpMode_MSPOVERRIDE": {
         "message": "Enable MSP Override mode",
         "description": "Help text to MSP OVERRIDE mode"

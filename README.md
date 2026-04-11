@@ -9,6 +9,9 @@ Fix Angle Mode positioning (#3914)
 # Web仿真
 yarn run dev
 
+# BARO 模式兼容说明
+- 已补充 BARO(permanentId=3) 在 Modes 页面显示的兼容逻辑。
+- 当固件在 MODE_RANGES 中上报了 id=3，但 MSP_BOXNAMES/MSP_BOXIDS 漏报或最后一项被截断时，地面站会自动补出 BARO，可正常查看/编辑 AUX 范围。
 
 
 

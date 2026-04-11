@@ -2378,6 +2378,10 @@
         "message": "Bloqueig de direcció a la direcció del magnetòmetre (control de la brúixola)",
         "description": "Help text to MAG mode"
     },
+    "auxiliaryHelpMode_BARO": {
+        "message": "Activa el mode BARO (manteniment d'altitud amb baròmetre)",
+        "description": "Help text to BARO mode"
+    },
     "auxiliaryHelpMode_MSPOVERRIDE": {
         "message": "Activa el mode d'anul·lació de MSP",
         "description": "Help text to MSP OVERRIDE mode"

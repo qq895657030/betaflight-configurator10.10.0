@@ -607,6 +607,11 @@ MspHelper.prototype.process_data = function(dataHandler) {
                         buff.push(char);
                     }
                 }
+                // Compatibility: some firmwares omit a trailing ';' delimiter.
+                // Keep the final pending token so the last mode is not lost.
+                if (buff.length > 0) {
+                    FC.AUX_CONFIG.push(String.fromCharCode.apply(null, buff));
+                }
                 break;
             case MSPCodes.MSP_PIDNAMES:
                 FC.PID_NAMES = []; // empty the array as new data is coming in
@@ -622,6 +627,9 @@ MspHelper.prototype.process_data = function(dataHandler) {
                     } else {
                         buff.push(char);
                     }
+                }
+                if (buff.length > 0) {
+                    FC.PID_NAMES.push(String.fromCharCode.apply(null, buff));
                 }
                 break;
             case MSPCodes.MSP_BOXIDS:
