@@ -529,8 +529,8 @@ async function prepare_file(onComplete) {
                 suggestedName: filename,
                 types: [{
                     description: 'Blackbox log',
-                    accept: { 'application/octet-stream': ['.bbl'] }
-                }]
+                    accept: { 'application/octet-stream': ['.bbl'] },
+                }],
             });
 
             const writable = await handle.createWritable();
@@ -543,7 +543,7 @@ async function prepare_file(onComplete) {
                 },
                 async close() {
                     await writable.close();   //  必须
-                }
+                },
             };
 
             onComplete(fileWriter);

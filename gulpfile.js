@@ -716,37 +716,37 @@ function postProcessWindowsExecutables(buildDir, platforms, done) {
 function buildNWApps(platforms, flavor, dir, done) {
     if (platforms.length > 0) {
         const version = nwBuilderOptions.version;
-        
+
         // --- 修正开始：强制加上 flavor 后缀以匹配实际目录结构 ---
         // 无论 flavor 是 'normal' 还是 'sdk'，目录名都带上后缀，例如 0.72.0-normal
-        const flavorPostfix = '-' + flavor; 
+        const flavorPostfix = `-${flavor}`;
         // -------------------------------------------------------
 
-        const platformName = platforms[0] === 'win64' ? 'win-x64' : 
-                             platforms[0] === 'win32' ? 'win-ia32' : 
-                             platforms[0] === 'linux64' ? 'linux-x64' : 
-                             platforms[0] === 'linux32' ? 'linux-ia32' : 
+        const platformName = platforms[0] === 'win64' ? 'win-x64' :
+                             platforms[0] === 'win32' ? 'win-ia32' :
+                             platforms[0] === 'linux64' ? 'linux-x64' :
+                             platforms[0] === 'linux32' ? 'linux-ia32' :
                              platforms[0] === 'osx64' ? 'osx-x64' : platforms[0];
-        
+
         const expectedFolderName = `nwjs${flavor === 'normal' ? '' : '-sdk'}-v${version}-${platformName}`;
         // 注意：上面的 expectedFolderName 也要检查。
         // 如果 flavor 是 normal，文件夹通常是 nwjs-v0.72.0-win-x64
         // 如果 flavor 是 sdk，文件夹通常是 nwjs-sdk-v0.72.0-win-x64
-        
+
         const cachePath = path.join('./cache', `${version}${flavorPostfix}`, expectedFolderName);
-        
+
         console.log(`Checking local cache at: ${cachePath}`);
         console.log(`Expected folder structure: cache/${version}${flavorPostfix}/${expectedFolderName}`);
 
         if (!fs.existsSync(cachePath)) {
             console.error(`ERROR: Local NW.js cache not found at ${cachePath}`);
-            
+
             // 尝试给出一个可能的正确路径提示
             const altPath = path.join('./cache', version, expectedFolderName);
             if (fs.existsSync(altPath)) {
                  console.warn(`Hint: Files found at ${altPath} instead? Consider moving them.`);
             }
-            
+
             process.exit(1);
         } else {
             const exeName = platforms[0].startsWith('win') ? 'nw.exe' : 'nw';
@@ -768,35 +768,35 @@ function buildNWApps(platforms, flavor, dir, done) {
             // 会尝试复用。如果它依然强行下载，我们只能希望它发现文件完整后跳过解压。
             // 如果依然失败，说明该版本 nw-builder 有严重 Bug，需手动打包。
         }, nwBuilderOptions));
-        
+
         builder.on('log', console.log);
-        
+
         builder.build(function (err) {
             if (err) {
                 // 如果是下载错误但本地文件确实存在，我们可以尝试忽略吗？
                 // 不，nw-builder 的构建流程强依赖下载/解压后的状态。
                 // 但如果错误是 "Unable to download"，而我们已经验证了本地文件存在，
                 // 这通常意味着 nw-builder 内部逻辑崩溃。
-                
+
                 const errorMsg = err.toString();
                 if (errorMsg.includes('Unable to download') || errorMsg.includes('download')) {
                     console.warn('⚠️  NW Builder failed to download/verify, BUT local files exist.');
                     console.warn('⚠️  尝试手动复制文件进行构建作为备选方案...');
-                    
+
                     // --- 备选方案：手动复制文件构建 (Bypass nw-builder build) ---
                     // 既然 nw-builder 坏了，我们手动做它该做的事：复制 NW.js + 复制 Dist
                     const destDir = path.join(dir, metadata.name, platforms[0]);
                     console.log(`Manually copying files to ${destDir}...`);
-                    
+
                     // 1. 创建目标目录
                     fse.ensureDirSync(destDir);
-                    
+
                     // 2. 复制 NW.js 所有文件
                     fse.copySync(cachePath, destDir);
-                    
+
                     // 3. 复制 Dist 文件到目标目录
                     // nw-builder 默认会把 files 模式匹配的内容复制到可执行文件同级目录
-                    const distFiles = nwBuilderOptions.files; 
+                    const distFiles = nwBuilderOptions.files;
                     // 简单处理：直接复制整个 dist 目录内容到 destDir
                     // 注意：这里假设 files 是 './dist/**/*'
                     if (fs.existsSync(DIST_DIR)) {

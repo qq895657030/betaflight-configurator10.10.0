@@ -184,7 +184,7 @@ const MSPCodes = {
     MSP_DEBUG:                      254,
 
     MSP_S_LOOP: 500,
-    
+
     // MSPv2 Common
     MSP2_COMMON_SERIAL_CONFIG:          0x1009,
     MSP2_COMMON_SET_SERIAL_CONFIG:      0x100A,

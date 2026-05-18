@@ -370,7 +370,7 @@ function startProcess() {
                         import("./tabs/onboard_tuning").then(({ onboard_tuning }) =>
                             onboard_tuning.initialize(content_ready),
                         );
-                        break;                        
+                        break;
                     case 'failsafe':
                         import("./tabs/failsafe").then(({ failsafe }) =>
                             failsafe.initialize(content_ready),

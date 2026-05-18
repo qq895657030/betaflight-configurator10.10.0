@@ -9,13 +9,13 @@ import $ from 'jquery';
 // 🔥 全局配置区：只需修改这里 🔥
 // ==========================================
 // 如果 MSPCodes.js 中定义了 MSP_S_LOOP，则使用它；否则直接填数字 (例如 500)
-const TARGET_CODE = MSPCodes.MSP_S_LOOP || 500; 
+const TARGET_CODE = MSPCodes.MSP_S_LOOP || 500;
 // ==========================================
 
 // 2. 轮询频率 (单位：毫秒)
 // 推荐值：50ms (20Hz) ~ 100ms (10Hz)。
 // 警告：不要低于 20ms，否则可能导致串口拥堵和 CRC 校验失败！
-const LOOP_INTERVAL_MS = 50; 
+const LOOP_INTERVAL_MS = 50;
 
 const LOOP_INTERVAL_NAME = 'onboard_loop_stream';
 
@@ -78,7 +78,7 @@ function startLoopStream() {
         const v4 = parseInt16(data[6], data[7]);
 
         // 4. 格式化原始数据 (Hex with 0x prefix)
-        const hexStr = dataDec.slice(0, 8).map(b => '0x' + b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+        const hexStr = dataDec.slice(0, 8).map(b => `0x${b.toString(16).padStart(2, '0').toUpperCase()}`).join(' ');
 
         // 5. 更新 UI
         const htmlContent = `
@@ -89,7 +89,7 @@ function startLoopStream() {
                 Raw: [${hexStr}]
             </div>
         `;
-        
+
         $('#loop_stream_result').html(htmlContent);
     }, LOOP_INTERVAL_MS, true); // 🔥 这里使用了配置的变量
 }
@@ -112,7 +112,7 @@ const onboard_tuning = {
 
             // ========= 本地测试 =========
             $('#test_btn').on('click', function () {
-                $('#test_result').text("JS OK " + new Date().toLocaleTimeString());
+                $('#test_result').text(`JS OK ${new Date().toLocaleTimeString()}`);
             });
 
             // ========= MSP API VERSION =========
@@ -129,7 +129,7 @@ const onboard_tuning = {
                     setTimeout(() => {
                         if (FC.CONFIG && FC.CONFIG.apiVersion) {
                             $('#msp_result').html(
-                                "API Version: <strong>" + FC.CONFIG.apiVersion + "</strong>"
+                                `API Version: <strong>${FC.CONFIG.apiVersion}</strong>`,
                             );
                         } else {
                             $('#msp_result').html("收到响应但未解析到版本信息");
@@ -147,13 +147,13 @@ const onboard_tuning = {
                         this.checked = false;
                         return;
                     }
-                    
+
                     // 提示用户当前监控的 Code (使用全局常量)
                     // 清空旧缓存，避免显示旧数据 (使用全局常量)
                     if(window.CUSTOM_MSP_CACHE) {
                         window.CUSTOM_MSP_CACHE = window.CUSTOM_MSP_CACHE.filter(i => i.code !== TARGET_CODE);
                     }
-                    
+
                     startLoopStream();
                 } else {
                     stopLoopStream();
@@ -173,7 +173,7 @@ const onboard_tuning = {
     cleanup: function (callback) {
         stopLoopStream();
         if (callback) callback();
-    }
+    },
 };
 
 TABS.onboard_tuning = onboard_tuning;
