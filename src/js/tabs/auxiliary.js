@@ -14,6 +14,12 @@ import inflection from "inflection";
 const auxiliary = {};
 const fallbackModeNameById = {
     3: 'BARO',
+    55: 'TARGET ENABLE',
+    56: 'TARGET NEAR MODE',
+    57: 'SIYI RECORD',
+    58: 'SIYI LOCK',
+    59: 'SIYI FOLLOW',
+    60: 'SIYI FPV',
 };
 
 auxiliary.initialize = function (callback) {
@@ -274,7 +280,7 @@ auxiliary.initialize = function (callback) {
 
         // Some firmwares may report a mode in MODE_RANGES but omit its name/id pair in BOXNAMES/BOXIDS.
         // Add a safe fallback entry so the mode still appears and remains editable in the Modes tab.
-        const knownModeIds = new Set(FC.AUX_CONFIG_IDS);
+        const knownModeIds = new Set(FC.AUX_CONFIG_IDS.slice(0, FC.AUX_CONFIG.length));
         const modeIdsFromRanges = new Set([
             ...FC.MODE_RANGES.map(modeRange => modeRange.id),
             ...FC.MODE_RANGES_EXTRA.map(modeRangeExtra => modeRangeExtra.id),
