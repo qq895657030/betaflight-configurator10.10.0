@@ -16,6 +16,7 @@ import serial from './serial.js';
 import CliAutoComplete from './CliAutoComplete.js';
 import DarkTheme, { setDarkTheme } from './DarkTheme.js';
 import windowWatcherUtil from './utils/window_watchers.js';
+import MSP from './msp.js';
 import UI_PHONES from './phones_ui.js';
 import { isExpertModeEnabled } from './utils/isExportModeEnabled.js';
 import { updateTabList } from './utils/updateTabList.js';
@@ -241,6 +242,7 @@ function startProcess() {
             const mspLogWindow = window.open('/tabs/msp_log.html', 'msp_log', 'width=900,height=600');
 
             if (mspLogWindow) {
+                mspLogWindow.mspLogSource = MSP;
                 mspLogWindow.focus();
             }
 
@@ -263,6 +265,8 @@ function startProcess() {
             },
             alwaysOnTop: false,
         }, function(createdWindow) {
+            createdWindow.contentWindow.mspLogSource = MSP;
+
             DarkTheme.isDarkThemeEnabled(function(isEnabled) {
                 windowWatcherUtil.passValue(createdWindow, 'darkTheme', isEnabled);
             });

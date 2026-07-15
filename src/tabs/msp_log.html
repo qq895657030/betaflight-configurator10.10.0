@@ -5,7 +5,7 @@
     <link type="text/css" rel="stylesheet" href="/css/opensans_webfontkit/fonts.css" media="all" />
     <link type="text/css" rel="stylesheet" href="/css/theme.css" media="all" />
     <link type="text/css" rel="stylesheet" href="/css/main.css" media="all" />
-    <link type="text/css" rel="stylesheet" href="/css/tabs/msp_log.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="/css/tabs/msp_log.css" media="all" onerror="this.onerror=null;this.href='/src/css/tabs/msp_log.less';" />
     <link type="text/css" rel="stylesheet" href="/css/dark-theme.css" media="all" disabled/>
     <script type="module" src="/js/tabs/msp_log.js"></script>
 </head>
@@ -22,6 +22,10 @@
                 <button type="button" class="msp-log-clear">Clear</button>
             </div>
         </header>
+        <section class="msp-log-summary">
+            <div class="msp-log-summary-title">TX in last 30s</div>
+            <div class="msp-log-summary-list"></div>
+        </section>
         <div class="msp-log-table-wrap">
             <table class="msp-log-table">
                 <thead>

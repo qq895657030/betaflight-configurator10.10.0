@@ -51,6 +51,42 @@
     overflow: auto;
 }
 
+.msp-log-summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 12px;
+    border-bottom: 1px solid #d7dbe0;
+    background: #f8f9fa;
+    font-size: 12px;
+}
+
+.msp-log-summary-title {
+    flex: 0 0 auto;
+    font-weight: 600;
+    color: #303438;
+}
+
+.msp-log-summary-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-width: 0;
+}
+
+.msp-log-summary-item,
+.msp-log-summary-empty {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    padding: 2px 7px;
+    border: 1px solid #c5cbd1;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #202225;
+    font-family: Consolas, Monaco, monospace;
+}
+
 .msp-log-table {
     width: 100%;
     border-collapse: collapse;
@@ -122,6 +158,22 @@
     .msp-log-toolbar {
         background: #2a2d31;
         border-color: #42464c;
+    }
+
+    .msp-log-summary {
+        background: #25292e;
+        border-color: #3a3f45;
+    }
+
+    .msp-log-summary-title {
+        color: #f0f2f4;
+    }
+
+    .msp-log-summary-item,
+    .msp-log-summary-empty {
+        background: #30343a;
+        border-color: #4a5057;
+        color: #e3e6e8;
     }
 
     .msp-log-actions button {

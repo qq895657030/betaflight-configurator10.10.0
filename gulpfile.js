@@ -445,6 +445,7 @@ function dist_rollup() {
                 'js/utils/common': 'src/js/utils/common.js',
                 'js/jquery': 'src/js/jquery.js',
                 'js/main': 'src/js/main.js',
+                'js/tabs/msp_log': 'src/js/tabs/msp_log.js',
                 'js/tabs/receiver_msp': 'src/js/tabs/receiver_msp.js',
             },
             plugins: [

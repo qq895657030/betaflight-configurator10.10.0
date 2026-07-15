@@ -1,20 +1,31 @@
 import windowWatcherUtil from "../utils/window_watchers";
-import "../../css/tabs/msp_log.less";
+import MSPCodes from "../msp/MSPCodes";
 import $ from 'jquery';
 
 const MAX_RENDERED_ROWS = 1000;
-const MSP = opener.MSP;
+const SUMMARY_WINDOW_MS = 30000;
 const cssDark = [
     '/css/dark-theme.css',
 ];
 
 let paused = false;
 let pendingEntries = [];
+let txSummaryEntries = [];
+let initialized = false;
+let MSP = null;
 
 const entriesElement = $('.msp-log-entries');
 const tableWrapElement = $('.msp-log-table-wrap');
 const pauseButtonElement = $('.msp-log-pause');
 const autoScrollElement = $('.msp-log-autoscroll');
+const summaryListElement = $('.msp-log-summary-list');
+const mspCodeNames = Object.entries(MSPCodes).reduce((codeNames, [name, code]) => {
+    if (Number.isInteger(code) && !codeNames[code]) {
+        codeNames[code] = name;
+    }
+
+    return codeNames;
+}, {});
 
 const watchers = {
     darkTheme: (val) => {
@@ -57,11 +68,44 @@ function formatCrc(entry) {
     return entry.checksumOk ? 'ok' : 'bad';
 }
 
+function getCodeName(code) {
+    return mspCodeNames[code] || 'UNKNOWN';
+}
+
+function updateTxSummary(entry) {
+    const now = Date.now();
+
+    if (entry?.clear) {
+        txSummaryEntries = [];
+    } else if (entry?.direction === 'tx') {
+        txSummaryEntries.push(entry);
+    }
+
+    txSummaryEntries = txSummaryEntries.filter((txEntry) => now - txEntry.time <= SUMMARY_WINDOW_MS);
+
+    const summaryItems = [...new Set(txSummaryEntries.map((txEntry) => txEntry.code))]
+        .sort((left, right) => left - right);
+
+    summaryListElement.empty();
+
+    if (!summaryItems.length) {
+        summaryListElement.append($('<span class="msp-log-summary-empty">').text('No TX yet'));
+        return;
+    }
+
+    summaryItems.forEach((code) => {
+        summaryListElement.append($('<span class="msp-log-summary-item">').text(`${code} ${getCodeName(code)}`));
+    });
+}
+
 function appendEntry(entry) {
     if (entry.clear) {
         entriesElement.empty();
+        updateTxSummary(entry);
         return;
     }
+
+    updateTxSummary(entry);
 
     const row = $('<tr>')
         .addClass(entry.direction === 'tx' ? 'msp-log-tx' : 'msp-log-rx')
@@ -108,7 +152,10 @@ function applyNormalTheme() {
 
 $('.msp-log-clear').on('click', function() {
     pendingEntries = [];
-    MSP.clearLogEntries();
+
+    if (MSP) {
+        MSP.clearLogEntries();
+    }
 });
 
 pauseButtonElement.on('click', function() {
@@ -124,12 +171,38 @@ pauseButtonElement.on('click', function() {
     pauseButtonElement.text('Pause');
 });
 
-MSP.enableLog();
-MSP.getLogEntries().forEach(appendEntry);
-MSP.listenLog(handleLogEntry);
+function getMspSource() {
+    return window.mspLogSource || window.opener?.MSP;
+}
+
+function initializeMspLog() {
+    if (initialized) {
+        return;
+    }
+
+    MSP = getMspSource();
+
+    if (!MSP) {
+        summaryListElement.empty();
+        summaryListElement.append($('<span class="msp-log-summary-empty">').text('Waiting for MSP source'));
+        setTimeout(initializeMspLog, 100);
+        return;
+    }
+
+    initialized = true;
+    MSP.enableLog();
+    MSP.getLogEntries().forEach(appendEntry);
+    updateTxSummary();
+    MSP.listenLog(handleLogEntry);
+}
+
+initializeMspLog();
+
 window.addEventListener('beforeunload', function() {
-    MSP.removeLogListener(handleLogEntry);
-    MSP.disableLog();
+    if (MSP) {
+        MSP.removeLogListener(handleLogEntry);
+        MSP.disableLog();
+    }
 });
 
 windowWatcherUtil.bindWatchers(window, watchers);
