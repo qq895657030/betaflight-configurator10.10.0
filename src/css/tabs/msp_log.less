@@ -1,0 +1,157 @@
+.msp-log-window {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 0;
+    background: #f4f5f6;
+    color: #202225;
+}
+
+.msp-log-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 12px;
+    border-bottom: 1px solid #c8ccd0;
+    background: #ffffff;
+
+    h1 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.msp-log-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    label {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 12px;
+    }
+
+    button {
+        min-width: 64px;
+        height: 28px;
+        border: 1px solid #aab0b6;
+        border-radius: 4px;
+        background: #f7f8f9;
+        color: #202225;
+        cursor: pointer;
+    }
+}
+
+.msp-log-table-wrap {
+    flex: 1;
+    overflow: auto;
+}
+
+.msp-log-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12px;
+
+    th,
+    td {
+        padding: 5px 7px;
+        border-bottom: 1px solid #dde1e5;
+        text-align: left;
+        white-space: nowrap;
+        vertical-align: top;
+    }
+
+    th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #e9ecef;
+        color: #303438;
+        font-weight: 600;
+    }
+
+    th:nth-child(1) {
+        width: 110px;
+    }
+
+    th:nth-child(2) {
+        width: 44px;
+    }
+
+    th:nth-child(3),
+    th:nth-child(5),
+    th:nth-child(6) {
+        width: 58px;
+    }
+
+    th:nth-child(4) {
+        width: 70px;
+    }
+}
+
+.msp-log-payload {
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.msp-log-tx {
+    background: #eef7ff;
+}
+
+.msp-log-rx {
+    background: #f3fff4;
+}
+
+.msp-log-error {
+    background: #fff0f0;
+    color: #a40000;
+}
+
+.dark-theme {
+    .msp-log-window {
+        background: #1f2226;
+        color: #e3e6e8;
+    }
+
+    .msp-log-toolbar {
+        background: #2a2d31;
+        border-color: #42464c;
+    }
+
+    .msp-log-actions button {
+        background: #34383d;
+        border-color: #555b62;
+        color: #e3e6e8;
+    }
+
+    .msp-log-table {
+        th,
+        td {
+            border-color: #3a3f45;
+        }
+
+        th {
+            background: #30343a;
+            color: #f0f2f4;
+        }
+    }
+
+    .msp-log-tx {
+        background: #1e3344;
+    }
+
+    .msp-log-rx {
+        background: #203721;
+    }
+
+    .msp-log-error {
+        background: #4a2424;
+        color: #ffb5b5;
+    }
+}

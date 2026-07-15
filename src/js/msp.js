@@ -62,6 +62,10 @@ const MSP = {
 
     last_received_timestamp:   null,
     listeners:                  [],
+    logListeners:               [],
+    logEntries:                 [],
+    logEntryLimit:              1000,
+    logEnabled:                 false,
 
     JUMBO_FRAME_SIZE_LIMIT:     255,
 
@@ -218,7 +222,13 @@ const MSP = {
         this.message_buffer_uint8_view = new Uint8Array(this.message_buffer);
     },
     _dispatch_message(expectedChecksum) {
-        if (this.message_checksum === expectedChecksum) {
+        const protocol = this.state === this.decoder_states.CHECKSUM_V2 ?
+            this.constants.PROTOCOL_V2 :
+            this.constants.PROTOCOL_V1;
+        const checksumOk = this.message_checksum === expectedChecksum;
+        const payload = Array.from(this.message_buffer_uint8_view ?? []);
+
+        if (checksumOk) {
             // message received, store dataview
             this.dataView = new DataView(this.message_buffer, 0, this.message_length_expected);
         } else {
@@ -226,6 +236,16 @@ const MSP = {
             this.crcError = true;
             this.dataView = new DataView(new ArrayBuffer(0));
         }
+        this.logMessage({
+            direction: 'rx',
+            protocol,
+            code: this.code,
+            payload,
+            length: this.message_length_expected,
+            checksum: expectedChecksum,
+            checksumOk,
+            unsupported: Boolean(this.unsupported),
+        });
         this.notify();
         // Reset variables
         this.message_length_received = 0;
@@ -245,6 +265,69 @@ const MSP = {
     },
     clearListeners() {
         this.listeners = [];
+    },
+    listenLog(listener) {
+        if (this.logListeners.indexOf(listener) == -1) {
+            this.logListeners.push(listener);
+        }
+    },
+    removeLogListener(listener) {
+        const index = this.logListeners.indexOf(listener);
+
+        if (index !== -1) {
+            this.logListeners.splice(index, 1);
+        }
+    },
+    logMessage(entry) {
+        if (!this.logEnabled) {
+            return;
+        }
+
+        const loggedEntry = {
+            time: Date.now(),
+            ...entry,
+        };
+
+        this.logEntries.push(loggedEntry);
+
+        if (this.logEntries.length > this.logEntryLimit) {
+            this.logEntries.splice(0, this.logEntries.length - this.logEntryLimit);
+        }
+
+        this.logListeners.forEach((listener) => {
+            listener(loggedEntry);
+        });
+    },
+    getLogEntries() {
+        return this.logEntries.slice();
+    },
+    clearLogEntries() {
+        this.logEntries = [];
+        this.logListeners.forEach((listener) => {
+            listener({clear: true});
+        });
+    },
+    enableLog() {
+        this.logEnabled = true;
+    },
+    disableLog() {
+        this.logEnabled = false;
+        this.logEntries = [];
+    },
+    bytesToArray(data) {
+        if (!data) {
+            return [];
+        }
+
+        if (data instanceof ArrayBuffer) {
+            return Array.from(new Uint8Array(data));
+        }
+
+        if (ArrayBuffer.isView(data)) {
+            return Array.from(data);
+        }
+
+        return Array.from(data);
     },
     crc8_dvb_s2(crc, ch) {
         crc ^= ch;
@@ -337,7 +420,18 @@ const MSP = {
 
         if (!requestExists) {
             obj.timer = setTimeout(() => {
+                const payload = this.bytesToArray(data);
+
                 console.warn(`MSP: data request timed-out: ${code} ID: ${serial.connectionId} TAB: ${GUI.active_tab} TIMEOUT: ${this.timeout} QUEUE: ${this.callbacks.length} (${this.callbacks.map((e) => e.code)})`);
+                this.logMessage({
+                    direction: 'tx',
+                    protocol: code <= 254 ? this.constants.PROTOCOL_V1 : this.constants.PROTOCOL_V2,
+                    code,
+                    payload,
+                    length: payload.length,
+                    bytes: Array.from(new Uint8Array(bufferOut)),
+                    retry: true,
+                });
                 serial.send(bufferOut, (_sendInfo) => {
                     obj.stop = performance.now();
                     const executionTime = Math.round(obj.stop - obj.start);
@@ -350,10 +444,21 @@ const MSP = {
 
         // always send messages with data payload (even when there is a message already in the queue)
         if (data || !requestExists) {
+            const payload = this.bytesToArray(data);
+
             if (this.timeout > this.MIN_TIMEOUT) {
                 this.timeout--;
             }
 
+            this.logMessage({
+                direction: 'tx',
+                protocol: code <= 254 ? this.constants.PROTOCOL_V1 : this.constants.PROTOCOL_V2,
+                code,
+                payload,
+                length: payload.length,
+                bytes: Array.from(new Uint8Array(bufferOut)),
+                retry: false,
+            });
             serial.send(bufferOut, (sendInfo) => {
                 if (sendInfo.bytesSent === bufferOut.byteLength) {
                     if (callback_sent) {

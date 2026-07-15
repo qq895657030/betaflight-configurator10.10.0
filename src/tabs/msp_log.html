@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MSP Log</title>
+    <link type="text/css" rel="stylesheet" href="/css/opensans_webfontkit/fonts.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="/css/theme.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="/css/main.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="/css/tabs/msp_log.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="/css/dark-theme.css" media="all" disabled/>
+    <script type="module" src="/js/tabs/msp_log.js"></script>
+</head>
+<body>
+    <div class="msp-log-window">
+        <header class="msp-log-toolbar">
+            <h1>MSP Log</h1>
+            <div class="msp-log-actions">
+                <label>
+                    <input type="checkbox" class="msp-log-autoscroll" checked>
+                    Auto
+                </label>
+                <button type="button" class="msp-log-pause">Pause</button>
+                <button type="button" class="msp-log-clear">Clear</button>
+            </div>
+        </header>
+        <div class="msp-log-table-wrap">
+            <table class="msp-log-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Dir</th>
+                        <th>Proto</th>
+                        <th>Code</th>
+                        <th>Len</th>
+                        <th>CRC</th>
+                        <th>Payload</th>
+                    </tr>
+                </thead>
+                <tbody class="msp-log-entries"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

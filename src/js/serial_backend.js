@@ -696,6 +696,9 @@ console.log(`FC.CONFIG.boardType: ${FC.CONFIG.boardType}`);//这里执行了， 
     const sensorState = $('#sensor-status');
     sensorState.show();
 
+    const mspLogButton = $('#msp-log-window-button');
+    mspLogButton.show();
+
     const portPicker = $('#portsinput');
     portPicker.hide();
 
@@ -722,6 +725,9 @@ function onClosed(result) {
 
     const dataflash = $('#dataflash_wrapper_global');
     dataflash.hide();
+
+    const mspLogButton = $('#msp-log-window-button');
+    mspLogButton.hide();
 
     const battery = $('#quad-status_wrapper');
     battery.hide();

@@ -37,6 +37,7 @@ import "../css/tabs/power.less";
 import "../css/tabs/transponder.less";
 import "../css/tabs/privacy_policy.less";
 import "../css/tabs/options.less";
+import "../css/tabs/msp_log.less";
 import "../css/opensans_webfontkit/fonts.css";
 import "../css/dropdown-lists/css/style_lists.css";
 import "switchery-latest/dist/switchery.min.css";

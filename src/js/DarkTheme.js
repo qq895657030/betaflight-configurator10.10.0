@@ -42,7 +42,10 @@ DarkTheme.apply = function() {
         }
 
         if (chrome.app.window !== undefined) {
-            windowWatcherUtil.passValue(chrome.app.window.get("receiver_msp"), 'darkTheme', isEnabled);
+            windowWatcherUtil.passValue([
+                chrome.app.window.get("receiver_msp"),
+                chrome.app.window.get("msp_log"),
+            ], 'darkTheme', isEnabled);
         }
     });
 };

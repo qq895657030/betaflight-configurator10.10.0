@@ -15,6 +15,7 @@ import CONFIGURATOR from './data_storage.js';
 import serial from './serial.js';
 import CliAutoComplete from './CliAutoComplete.js';
 import DarkTheme, { setDarkTheme } from './DarkTheme.js';
+import windowWatcherUtil from './utils/window_watchers.js';
 import UI_PHONES from './phones_ui.js';
 import { isExpertModeEnabled } from './utils/isExportModeEnabled.js';
 import { updateTabList } from './utils/updateTabList.js';
@@ -234,6 +235,39 @@ function startProcess() {
 
     // log library versions in console to make version tracking easier
     console.log(`Libraries: jQuery - ${$.fn.jquery}, three.js - ${THREE.REVISION}`);
+
+    $('#msp-log-window-button').on('click', function() {
+        if (!chrome.app?.window) {
+            const mspLogWindow = window.open('/tabs/msp_log.html', 'msp_log', 'width=900,height=600');
+
+            if (mspLogWindow) {
+                mspLogWindow.focus();
+            }
+
+            return;
+        }
+
+        const existingWindow = chrome.app.window.get('msp_log');
+        if (existingWindow) {
+            existingWindow.focus();
+            return;
+        }
+
+        chrome.app.window.create('/tabs/msp_log.html', {
+            id: 'msp_log',
+            innerBounds: {
+                minWidth: 680,
+                minHeight: 420,
+                width: 900,
+                height: 600,
+            },
+            alwaysOnTop: false,
+        }, function(createdWindow) {
+            DarkTheme.isDarkThemeEnabled(function(isEnabled) {
+                windowWatcherUtil.passValue(createdWindow, 'darkTheme', isEnabled);
+            });
+        });
+    });
 
     // Tabs
     $("#tabs ul.mode-connected li").click(function() {
