@@ -66,6 +66,8 @@ const MSP = {
     logEntries:                 [],
     logEntryLimit:              1000,
     logEnabled:                 false,
+    logPendingEntries:          [],
+    logNotifyTimer:             null,
 
     JUMBO_FRAME_SIZE_LIMIT:     255,
 
@@ -294,15 +296,33 @@ const MSP = {
             this.logEntries.splice(0, this.logEntries.length - this.logEntryLimit);
         }
 
-        this.logListeners.forEach((listener) => {
-            listener(loggedEntry);
-        });
+        this.logPendingEntries.push(loggedEntry);
+        this.scheduleLogNotify();
+    },
+    scheduleLogNotify() {
+        if (this.logNotifyTimer) {
+            return;
+        }
+
+        this.logNotifyTimer = setTimeout(() => {
+            const entries = this.logPendingEntries.splice(0);
+            this.logNotifyTimer = null;
+
+            if (!entries.length) {
+                return;
+            }
+
+            this.logListeners.forEach((listener) => {
+                listener(entries);
+            });
+        }, 50);
     },
     getLogEntries() {
         return this.logEntries.slice();
     },
     clearLogEntries() {
         this.logEntries = [];
+        this.logPendingEntries = [];
         this.logListeners.forEach((listener) => {
             listener({clear: true});
         });
@@ -313,6 +333,12 @@ const MSP = {
     disableLog() {
         this.logEnabled = false;
         this.logEntries = [];
+        this.logPendingEntries = [];
+
+        if (this.logNotifyTimer) {
+            clearTimeout(this.logNotifyTimer);
+            this.logNotifyTimer = null;
+        }
     },
     bytesToArray(data) {
         if (!data) {

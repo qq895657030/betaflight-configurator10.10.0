@@ -2,7 +2,8 @@ import windowWatcherUtil from "../utils/window_watchers";
 import MSPCodes from "../msp/MSPCodes";
 import $ from 'jquery';
 
-const MAX_RENDERED_ROWS = 1000;
+const MAX_RENDERED_ROWS = 300;
+const RENDER_INTERVAL_MS = 100;
 const SUMMARY_WINDOW_MS = 30000;
 const cssDark = [
     '/css/dark-theme.css',
@@ -10,6 +11,8 @@ const cssDark = [
 
 let paused = false;
 let pendingEntries = [];
+let renderEntries = [];
+let renderTimer = null;
 let txSummaryEntries = [];
 let initialized = false;
 let MSP = null;
@@ -72,13 +75,14 @@ function getCodeName(code) {
     return mspCodeNames[code] || 'UNKNOWN';
 }
 
-function updateTxSummary(entry) {
+function updateTxSummary(entryOrEntries) {
     const now = Date.now();
+    const entries = Array.isArray(entryOrEntries) ? entryOrEntries : [entryOrEntries];
 
-    if (entry?.clear) {
+    if (entries.some((entry) => entry?.clear)) {
         txSummaryEntries = [];
-    } else if (entry?.direction === 'tx') {
-        txSummaryEntries.push(entry);
+    } else {
+        txSummaryEntries.push(...entries.filter((entry) => entry?.direction === 'tx'));
     }
 
     txSummaryEntries = txSummaryEntries.filter((txEntry) => now - txEntry.time <= SUMMARY_WINDOW_MS);
@@ -98,6 +102,23 @@ function updateTxSummary(entry) {
     });
 }
 
+function entryToRowHtml(entry) {
+    const rowClasses = [
+        entry.direction === 'tx' ? 'msp-log-tx' : 'msp-log-rx',
+        entry.checksumOk === false || entry.unsupported === true ? 'msp-log-error' : '',
+    ].filter(Boolean).join(' ');
+
+    return `<tr class="${rowClasses}">` +
+        `<td>${formatTime(entry.time)}</td>` +
+        `<td>${entry.direction.toUpperCase()}</td>` +
+        `<td>V${entry.protocol}</td>` +
+        `<td>${entry.code}</td>` +
+        `<td>${entry.length}</td>` +
+        `<td>${formatCrc(entry)}</td>` +
+        `<td class="msp-log-payload">${payloadToHex(entry.payload)}</td>` +
+    '</tr>';
+}
+
 function appendEntry(entry) {
     if (entry.clear) {
         entriesElement.empty();
@@ -105,21 +126,16 @@ function appendEntry(entry) {
         return;
     }
 
-    updateTxSummary(entry);
+    appendEntries([entry]);
+}
 
-    const row = $('<tr>')
-        .addClass(entry.direction === 'tx' ? 'msp-log-tx' : 'msp-log-rx')
-        .toggleClass('msp-log-error', entry.checksumOk === false || entry.unsupported === true);
+function appendEntries(entries) {
+    if (!entries.length) {
+        return;
+    }
 
-    row.append($('<td>').text(formatTime(entry.time)));
-    row.append($('<td>').text(entry.direction.toUpperCase()));
-    row.append($('<td>').text(`V${entry.protocol}`));
-    row.append($('<td>').text(entry.code));
-    row.append($('<td>').text(entry.length));
-    row.append($('<td>').text(formatCrc(entry)));
-    row.append($('<td class="msp-log-payload">').text(payloadToHex(entry.payload)));
-
-    entriesElement.prepend(row);
+    updateTxSummary(entries);
+    entriesElement.prepend(entries.slice().reverse().map(entryToRowHtml).join(''));
 
     while (entriesElement.children().length > MAX_RENDERED_ROWS) {
         entriesElement.children().last().remove();
@@ -130,14 +146,40 @@ function appendEntry(entry) {
     }
 }
 
-function handleLogEntry(entry) {
-    if (paused && !entry.clear) {
-        pendingEntries.push(entry);
+function scheduleRender() {
+    if (renderTimer) {
+        return;
+    }
+
+    renderTimer = setTimeout(() => {
+        const entries = renderEntries.splice(0);
+        renderTimer = null;
+
+        appendEntries(entries);
+
+        if (renderEntries.length) {
+            scheduleRender();
+        }
+    }, RENDER_INTERVAL_MS);
+}
+
+function handleLogEntry(entryOrEntries) {
+    const entries = Array.isArray(entryOrEntries) ? entryOrEntries : [entryOrEntries];
+
+    if (entries.some((entry) => entry.clear)) {
+        renderEntries = [];
+        appendEntry({clear: true});
+        return;
+    }
+
+    if (paused) {
+        pendingEntries.push(...entries);
         pauseButtonElement.text(`Resume (${pendingEntries.length})`);
         return;
     }
 
-    appendEntry(entry);
+    renderEntries.push(...entries);
+    scheduleRender();
 }
 
 function applyDarkTheme() {
@@ -166,7 +208,7 @@ pauseButtonElement.on('click', function() {
         return;
     }
 
-    pendingEntries.forEach(appendEntry);
+    appendEntries(pendingEntries);
     pendingEntries = [];
     pauseButtonElement.text('Pause');
 });
@@ -191,7 +233,7 @@ function initializeMspLog() {
 
     initialized = true;
     MSP.enableLog();
-    MSP.getLogEntries().forEach(appendEntry);
+    appendEntries(MSP.getLogEntries());
     updateTxSummary();
     MSP.listenLog(handleLogEntry);
 }
@@ -202,6 +244,10 @@ window.addEventListener('beforeunload', function() {
     if (MSP) {
         MSP.removeLogListener(handleLogEntry);
         MSP.disableLog();
+    }
+
+    if (renderTimer) {
+        clearTimeout(renderTimer);
     }
 });
 
